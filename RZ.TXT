@@ -1,0 +1,183 @@
+20/06/2022  22:43
+  
+REPORTE DE CAJEROS (Z)
+COPIA DEL ORIGINAL
+  
+RESTAURANTE DEMO
+RUC:NO FISCAL / NO FISCAL
+SERIAL:NO FISCAL
+  
+CONTADOR Z : XXX
+CAJERO : HUMBERTO SEQUEIRA
+  
+VENTA DEL DIA:  203   5,047.01
+  
+TOTALES DE CAJA
+  
+EFECTIVO       24     1,705.74
+VISA          154     3,235.92
+CLAVE           7       188.07
+C x C          18       467.34
+OTRO PAGO       0         0.00
+  
+SUBTOTAL:          B/.5,597.07
+------------------------------
+Propina VISA   58       188.60
+Propina CLAVE   1         2.15
+  
+AJUSTES
+  
+DESCUENTO 0.10   3       -1.11
+DESCUENTO 0.25 232     -232.29
+DESCUENTO 1.00  50     -155.15
+ANULACION       29     -180.61
+  
+  
+16/06/2022  22:43
+  
+REPORTE DE CAJEROS (Z)
+COPIA DEL ORIGINAL
+  
+RESTAURANTE DEMO
+RUC:NO FISCAL / NO FISCAL
+SERIAL:NO FISCAL
+  
+CONTADOR Z : XXX
+CAJERO : LOLO MORALES
+  
+VENTA DEL DIA:  104   2,112.68
+  
+TOTALES DE CAJA
+  
+EFECTIVO       33       975.21
+VISA           31       616.33
+MASTER CARD    12       162.68
+CLAVE          23       460.63
+C x C           5       145.42
+OTRO PAGO       0         0.00
+  
+SUBTOTAL:          B/.2,360.27
+------------------------------
+Propina VISA   13        52.35
+Propina MASTE   4         8.60
+Propina CLAVE   9        20.00
+  
+AJUSTES
+  
+DESCUENTO 0.07   3       -0.43
+DESCUENTO 0.10   2       -1.53
+DESCUENTO 0.25  39      -54.46
+DESCUENTO 1.00  27      -97.05
+ANULACION        1        1.99
+
+16/06/2022  22:43
+  
+REPORTE DE TERMINAL (Z)
+  
+RESTAURANTE DEMO
+RUC:NO FISCAL / NO FISCAL
+SERIAL:NO FISCAL
+  
+CONTADOR Z : 4392 
+CAJERO : REPORTE/TERMINAL
+  
+VENTA DEL DIA:   307  7,159.69
+  
+TOTALES DE CAJA
+  
+EFECTIVO       57     2,680.95
+VISA          185     3,852.25
+MASTER CARD    12       162.68
+CLAVE          30       648.70
+C x C          23       612.76
+OTRO PAGO       0            0.00
+  
+SUBTOTAL:          B/.7,957.34
+------------------------------
+ITBMS  (7%):       B/.501.31
+  
+Propina VISA   71       240.95
+Propina MASTE   4         8.60
+Propina CLAVE  10        22.15
+  
+AJUSTES
+  
+DESCUENTO 0.07   3       -0.43
+DESCUENTO 0.10   5       -2.64
+DESCUENTO 0.25 271     -286.75
+DESCUENTO 1.00  77     -252.20
+ANULACION       30     -178.62
+  
+VENTAS ACUMULADAS
+HOY        : B/.7,159.69
+TOTAL ANT. : B/.16,805,549.28
+TOTAL NUEVO: B/.16,812,708.97
+  
+GRAN TOTAL  : B/.0.00
+  
+  
+16/06/2022  22:43
+  
+REPORTE DEPARTAMENTAL (Z)
+  
+RESTAURANTE DEMO
+RUC:NO FISCAL / NO FISCAL
+SERIAL:NO FISCAL
+  
+CONTADOR Z : 4392 
+DEPART. REPORTE/TERMINAL
+  
+DEPTO ABIERTO   8     1.06
+DESAYUNO      538 1,537.48
+FRITURAS      503   546.13
+ENTRADAS       16    70.40
+QUESOS         54    39.12
+ENSALADAS      10    46.99
+COMIDAS       448 1,558.79
+MARISCOS       79   446.59
+EMPAREDADOS   122   669.75
+POSTRES        17    49.12
+BEBIDAS       114   335.24
+JUGOS          55   127.61
+CERVEZAS       37   129.50
+BOQUITAS        4   140.00
+LICORES TRAGO   1     4.50
+COCKT APERI D   2    13.00
+VINOS           9    26.50
+CAFE TE       300   435.56
+SOPAS         199   369.33
+EXTRAS         12     4.46
+CHICHAS       270   419.06
+APETITO 24    105   189.50
+  
+TOTAL DEPTOS :B/.7,159.69
+  
+  
+16/06/2022  22:43
+  
+REPORTE DE GRUPOS (Z)
+  
+RESTAURANTE DEMO
+RUC:NO FISCAL / NO FISCAL
+SERIAL:NO FISCAL
+  
+CONTADOR Z : 4392 
+DEPART. GRUPO/TERMINAL
+  
+BAR               2,557.30
+COCINA               43.58
+DEPTO ABIERTO         1.06
+EVENTOS             419.06
+  
+TOTAL GRUPOS:  B/.3,021.00
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,218 @@
+[Root]
+Most Recent Package=Sistema SoloPos
+
+
+[Package|PAQUETE SOLO POS|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\VENTAS
+
+[Package|PAQUETE SOLO POS|Configure DAO ISAMs]
+Applicable=No
+
+[Package|PAQUETE SOLO POS|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|PAQUETE SOLO POS|Files Found]
+Mdac_typxes.exe=C:\MDAC\Mdac_typxes.exe
+
+[Package|PAQUETE SOLO POS|Files Released]
+
+[Package|PAQUETE SOLO POS|Missing Dependency Information]
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=
+
+[Package|PAQUETE SOLO POS|Out-of-Date Dependency Information]
+
+[Package|PAQUETE SOLO POS|Files Added]
+mdac_typxes.exe=
+
+[Package|PAQUETE SOLO POS|Files Removed]
+c:\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+
+[Package|PAQUETE SOLO POS|Files In Project]
+C:\SYS_POS\Sys_pos.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=Yes
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=Yes
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=Yes
+C:\MDAC\Mdac_typxes.exe=Yes
+
+[Package|PAQUETE SOLO POS|Configure Registry Files]
+Applicable=No
+
+[Package|PAQUETE SOLO POS|Configure Remote Servers]
+Applicable=No
+
+[Package|PAQUETE SOLO POS|Install Locations]
+C:\SYS_POS\Sys_pos.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\DOWNLOAD\Mdac_typxes.exe=$(CommonFiles)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=$(WinSysPath)
+C:\MDAC\Mdac_typxes.exe=$(AppPath)
+
+[Package|PAQUETE SOLO POS|Configure Shared Files]
+Applicable=Yes
+C:\SYS_POS\Sys_pos.exe=No
+C:\MDAC\Mdac_typxes.exe=No
+
+[Package|PAQUETE SOLO POS|Distribution]
+Type=single
+Size=
+Title=SOLO POS
+
+[Package|PAQUETE SOLO POS|Package]
+PackageFolder=C:\VENTAS
+ProjectFolder=C:\SYS_POS
+ServerSideCab=
+File1=C:\VENTAS\setup.exe
+File2=C:\VENTAS\Setup.Lst
+File3=C:\VENTAS\Sys_pos.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Sistema SoloPos|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Installs\SoloPos
+
+[Package|Sistema SoloPos|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Sistema SoloPos|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Sistema SoloPos|Files Found]
+Mdac_typxes.exe=C:\MDAC\Mdac_typxes.exe
+
+[Package|Sistema SoloPos|Files Released]
+
+[Package|Sistema SoloPos|Missing Dependency Information]
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=
+C:\MDAC\Mdac_typxes.exe=
+C:\OPOS\EPSON\COCASH.OCX=
+C:\OPOS\EPSON\COPTR.OCX=
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msadox.dll=
+
+[Package|Sistema SoloPos|Out-of-Date Dependency Information]
+
+[Package|Sistema SoloPos|Files Added]
+mdac_typxes.exe=
+
+[Package|Sistema SoloPos|Files Removed]
+c:\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+c:\mdac\mdac_typxes.exe=
+
+[Package|Sistema SoloPos|Files In Project]
+C:\SYS_POS\Sys_pos.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=Yes
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=Yes
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=Yes
+C:\MDAC\Mdac_typxes.exe=No
+C:\OPOS\EPSON\COPTR.OCX=Yes
+C:\OPOS\EPSON\COCASH.OCX=Yes
+
+[Package|Sistema SoloPos|Configure Registry Files]
+Applicable=No
+
+[Package|Sistema SoloPos|Configure Remote Servers]
+Applicable=No
+
+[Package|Sistema SoloPos|Install Locations]
+C:\SYS_POS\Sys_pos.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\DOWNLOAD\Mdac_typxes.exe=$(CommonFiles)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=$(WinSysPath)
+C:\MDAC\Mdac_typxes.exe=$(AppPath)
+C:\OPOS\EPSON\COPTR.OCX=$(WinSysPath)
+C:\OPOS\EPSON\COCASH.OCX=$(WinSysPath)
+
+[Package|Sistema SoloPos|Configure Shared Files]
+Applicable=Yes
+C:\SYS_POS\Sys_pos.exe=No
+C:\MDAC\Mdac_typxes.exe=No
+
+[Package|Sistema SoloPos|Distribution]
+Type=single
+Size=
+Title=Solo Pos
+
+[Package|Sistema SoloPos|IconGroups]
+Group0=Solo Pos
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Sistema SoloPos|Solo Pos]
+Icon1=Sys_pos.exe
+Title1=Solo Pos
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Sistema SoloPos|Package]
+PackageFolder=C:\Installs\SoloPos
+ProjectFolder=C:\SYS_POS
+ServerSideCab=
+File1=C:\Installs\SoloPos\setup.exe
+File2=C:\Installs\SoloPos\Setup.Lst
+File3=C:\Installs\SoloPos\Sys_pos.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

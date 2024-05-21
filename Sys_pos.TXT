@@ -1,0 +1,3 @@
+The cab file for your application has been built as 'C:\Installs\SoloPos\Sys_pos.CAB'.
+
+There is also a batch file in the support directory (C:\Installs\SoloPos\Support\Sys_pos.BAT) that will allow you to recreate the cab file in case you make changes to some of the files.

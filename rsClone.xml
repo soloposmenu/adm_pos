@@ -1,0 +1,660 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='FECHA' rs:number='4' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='255'/>
+		</s:AttributeType>
+		<s:AttributeType name='Fecha_Trans' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'
+			 rs:basetable='HIST_TR' rs:basecolumn='FECHA'>
+			<s:datatype dt:type='string' dt:maxLength='8'/>
+		</s:AttributeType>
+		<s:AttributeType name='Fiscal' rs:number='3' rs:nullable='true' rs:maydefer='true'>
+			<s:datatype dt:type='string' dt:maxLength='255'/>
+		</s:AttributeType>
+		<s:AttributeType name='Hora' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='255'/>
+		</s:AttributeType>
+		<s:AttributeType name='Msa' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Msro' rs:number='7' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='i2' dt:maxLength='2' rs:precision='5' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Trans' rs:number='1' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true' rs:basetable='HIST_TR'
+			 rs:basecolumn='NUM_TRANS'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Ventas' rs:number='8' rs:nullable='true' rs:maydefer='true'>
+			<s:datatype dt:type='string' dt:maxLength='255'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1814' Hora='12:50' Msa='90' Msro='570' Trans='1909'
+		 Ventas='45.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1815' Hora='13:12' Msa='3' Msro='530' Trans='1910'
+		 Ventas='17.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1816' Hora='13:39' Msa='4' Msro='570' Trans='1911'
+		 Ventas='58.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1817' Hora='13:45' Msa='5' Msro='530' Trans='1912'
+		 Ventas='39.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1818' Hora='13:54' Msa='1' Msro='530' Trans='1913'
+		 Ventas='24.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1819' Hora='13:57' Msa='6' Msro='570' Trans='1914'
+		 Ventas='50.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1820' Hora='13:57' Msa='2' Msro='530' Trans='1915'
+		 Ventas='15.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1821' Hora='14:23' Msa='90' Msro='570' Trans='1916'
+		 Ventas='22.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1822' Hora='14:26' Msa='2' Msro='530' Trans='1917'
+		 Ventas='49.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1823' Hora='14:53' Msa='10' Msro='510' Trans='1918'
+		 Ventas='29.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1824' Hora='15:02' Msa='2' Msro='560' Trans='1919'
+		 Ventas='9.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1825' Hora='15:08' Msa='1' Msro='570' Trans='1920'
+		 Ventas='45.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1826' Hora='15:11' Msa='90' Msro='570' Trans='1921'
+		 Ventas='12.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1827' Hora='15:16' Msa='3' Msro='560' Trans='1922'
+		 Ventas='35.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1828' Hora='15:26' Msa='6' Msro='530' Trans='1923'
+		 Ventas='73.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1829' Hora='15:46' Msa='10' Msro='570' Trans='1924'
+		 Ventas='36.87'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1830' Hora='16:19' Msa='2' Msro='510' Trans='1925'
+		 Ventas='48.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1831' Hora='16:44' Msa='4' Msro='560' Trans='1926'
+		 Ventas='27.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1832' Hora='16:58' Msa='13' Msro='530' Trans='1927'
+		 Ventas='25.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1833' Hora='17:10' Msa='27' Msro='510' Trans='1928'
+		 Ventas='49.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1834' Hora='17:10' Msa='1' Msro='530' Trans='1929'
+		 Ventas='9.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1835' Hora='17:54' Msa='3' Msro='560' Trans='1930'
+		 Ventas='41.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1836' Hora='18:03' Msa='2' Msro='510' Trans='1931'
+		 Ventas='44.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1837' Hora='18:09' Msa='7' Msro='530' Trans='1932'
+		 Ventas='14.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1838' Hora='18:23' Msa='2' Msro='510' Trans='1933'
+		 Ventas='10.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1839' Hora='18:24' Msa='7' Msro='530' Trans='1934'
+		 Ventas='14.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1840' Hora='18:28' Msa='90' Msro='540' Trans='1935'
+		 Ventas='40.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1841' Hora='18:30' Msa='6' Msro='560' Trans='1936'
+		 Ventas='28.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1842' Hora='18:32' Msa='5' Msro='510' Trans='1937'
+		 Ventas='30.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1843' Hora='18:35' Msa='89' Msro='540' Trans='1938'
+		 Ventas='24.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1844' Hora='18:36' Msa='1' Msro='560' Trans='1939'
+		 Ventas='44.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1845' Hora='18:42' Msa='3' Msro='560' Trans='1940'
+		 Ventas='54.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1846' Hora='18:49' Msa='8' Msro='530' Trans='1941'
+		 Ventas='19.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1847' Hora='18:57' Msa='13' Msro='570' Trans='1942'
+		 Ventas='36.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1848' Hora='18:58' Msa='27' Msro='510' Trans='1943'
+		 Ventas='33.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1849' Hora='19:08' Msa='2' Msro='510' Trans='1944'
+		 Ventas='17.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1850' Hora='19:09' Msa='4' Msro='530' Trans='1945'
+		 Ventas='49.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1851' Hora='19:24' Msa='2' Msro='530' Trans='1946'
+		 Ventas='24.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1852' Hora='19:28' Msa='90' Msro='540' Trans='1947'
+		 Ventas='12.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1853' Hora='19:33' Msa='16' Msro='570' Trans='1948'
+		 Ventas='115.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1854' Hora='19:34' Msa='16' Msro='570' Trans='1949'
+		 Ventas='48.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1855' Hora='19:36' Msa='27' Msro='510' Trans='1950'
+		 Ventas='26.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1856' Hora='19:38' Msa='5' Msro='560' Trans='1951'
+		 Ventas='53.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1857' Hora='19:42' Msa='10' Msro='530' Trans='1952'
+		 Ventas='30.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1858' Hora='19:45' Msa='90' Msro='570' Trans='1953'
+		 Ventas='25.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1859' Hora='19:46' Msa='6' Msro='570' Trans='1954'
+		 Ventas='47.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1860' Hora='19:48' Msa='13' Msro='530' Trans='1955'
+		 Ventas='27.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1861' Hora='19:48' Msa='89' Msro='560' Trans='1956'
+		 Ventas='13.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1862' Hora='19:52' Msa='3' Msro='510' Trans='1957'
+		 Ventas='31.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1863' Hora='19:52' Msa='8' Msro='530' Trans='1958'
+		 Ventas='32.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1864' Hora='20:06' Msa='27' Msro='510' Trans='1959'
+		 Ventas='4.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1865' Hora='20:08' Msa='1' Msro='560' Trans='1960'
+		 Ventas='7.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1866' Hora='20:10' Msa='10' Msro='530' Trans='1961'
+		 Ventas='18.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1867' Hora='20:16' Msa='27' Msro='510' Trans='1962'
+		 Ventas='12.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1868' Hora='20:25' Msa='4' Msro='570' Trans='1963'
+		 Ventas='25.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1869' Hora='20:30' Msa='15' Msro='570' Trans='1964'
+		 Ventas='49.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1870' Hora='20:31' Msa='88' Msro='560' Trans='1965'
+		 Ventas='30.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1871' Hora='20:36' Msa='12' Msro='560' Trans='1966'
+		 Ventas='58.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1872' Hora='20:37' Msa='3' Msro='530' Trans='1967'
+		 Ventas='46.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1873' Hora='20:51' Msa='1' Msro='530' Trans='1968'
+		 Ventas='32.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1874' Hora='20:51' Msa='5' Msro='530' Trans='1969'
+		 Ventas='26.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1875' Hora='20:57' Msa='27' Msro='510' Trans='1970'
+		 Ventas='9.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1876' Hora='21:05' Msa='4' Msro='510' Trans='1971'
+		 Ventas='34.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1877' Hora='21:20' Msa='14' Msro='560' Trans='1972'
+		 Ventas='28.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1878' Hora='21:27' Msa='1' Msro='530' Trans='1973'
+		 Ventas='18.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1879' Hora='21:30' Msa='90' Msro='540' Trans='1974'
+		 Ventas='20.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1880' Hora='22:16' Msa='2' Msro='530' Trans='1975'
+		 Ventas='14.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1881' Hora='22:19' Msa='13' Msro='510' Trans='1976'
+		 Ventas='23.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1882' Hora='23:10' Msa='15' Msro='510' Trans='1977'
+		 Ventas='24.50'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1883' Hora='23:11' Msa='6' Msro='560' Trans='1978'
+		 Ventas='9.00'/>
+	<z:row FECHA='01/10/2017' Fecha_Trans='20171001' Fiscal='1884' Hora='23:42' Msa='3' Msro='560' Trans='1979'
+		 Ventas='12.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1885' Hora='13:10' Msa='90' Msro='500' Trans='1981'
+		 Ventas='12.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1886' Hora='13:25' Msa='85' Msro='540' Trans='1982'
+		 Ventas='15.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1887' Hora='15:14' Msa='1' Msro='560' Trans='1983'
+		 Ventas='16.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1888' Hora='17:03' Msa='4' Msro='560' Trans='1984'
+		 Ventas='21.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1889' Hora='17:32' Msa='10' Msro='510' Trans='1985'
+		 Ventas='24.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1890' Hora='17:42' Msa='2' Msro='530' Trans='1986'
+		 Ventas='24.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1891' Hora='18:19' Msa='1' Msro='500' Trans='1987'
+		 Ventas='13.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1892' Hora='18:40' Msa='27' Msro='510' Trans='1988'
+		 Ventas='10.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1893' Hora='19:01' Msa='1' Msro='530' Trans='1989'
+		 Ventas='12.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1894' Hora='19:10' Msa='9' Msro='560' Trans='1990'
+		 Ventas='20.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1895' Hora='19:13' Msa='4' Msro='530' Trans='1991'
+		 Ventas='10.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1896' Hora='19:34' Msa='2' Msro='510' Trans='1992'
+		 Ventas='21.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1897' Hora='19:40' Msa='3' Msro='540' Trans='1993'
+		 Ventas='0.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1898' Hora='19:49' Msa='13' Msro='560' Trans='1994'
+		 Ventas='22.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1899' Hora='20:03' Msa='27' Msro='510' Trans='1995'
+		 Ventas='16.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1900' Hora='20:04' Msa='5' Msro='530' Trans='1996'
+		 Ventas='35.12'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1901' Hora='20:11' Msa='4' Msro='510' Trans='1997'
+		 Ventas='26.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1902' Hora='20:20' Msa='1' Msro='530' Trans='1998'
+		 Ventas='20.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1903' Hora='20:34' Msa='6' Msro='560' Trans='1999'
+		 Ventas='15.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1904' Hora='20:37' Msa='90' Msro='570' Trans='2000'
+		 Ventas='15.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1905' Hora='20:39' Msa='3' Msro='510' Trans='2001'
+		 Ventas='15.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1906' Hora='21:01' Msa='7' Msro='530' Trans='2002'
+		 Ventas='26.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1907' Hora='21:17' Msa='1' Msro='560' Trans='2003'
+		 Ventas='25.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1908' Hora='21:24' Msa='4' Msro='510' Trans='2004'
+		 Ventas='14.50'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1909' Hora='21:35' Msa='2' Msro='530' Trans='2005'
+		 Ventas='33.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1910' Hora='21:49' Msa='13' Msro='560' Trans='2006'
+		 Ventas='78.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1911' Hora='22:05' Msa='4' Msro='530' Trans='2007'
+		 Ventas='33.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1912' Hora='22:08' Msa='2' Msro='530' Trans='2008'
+		 Ventas='15.36'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1913' Hora='22:47' Msa='13' Msro='530' Trans='2009'
+		 Ventas='30.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1914' Hora='22:59' Msa='10' Msro='530' Trans='2010'
+		 Ventas='30.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1915' Hora='22:59' Msa='2' Msro='530' Trans='2011'
+		 Ventas='12.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1916' Hora='23:01' Msa='2' Msro='530' Trans='2012'
+		 Ventas='15.00'/>
+	<z:row FECHA='02/10/2017' Fecha_Trans='20171002' Fiscal='1917' Hora='23:36' Msa='3' Msro='530' Trans='2013'
+		 Ventas='22.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1918' Hora='13:52' Msa='27' Msro='510' Trans='2015'
+		 Ventas='7.50'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1919' Hora='13:54' Msa='3' Msro='510' Trans='2016'
+		 Ventas='12.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1920' Hora='14:44' Msa='1' Msro='570' Trans='2017'
+		 Ventas='22.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1921' Hora='14:46' Msa='2' Msro='560' Trans='2018'
+		 Ventas='27.50'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1922' Hora='15:40' Msa='27' Msro='510' Trans='2019'
+		 Ventas='6.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1923' Hora='15:43' Msa='7' Msro='510' Trans='2020'
+		 Ventas='22.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1924' Hora='15:59' Msa='3' Msro='570' Trans='2021'
+		 Ventas='12.50'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1925' Hora='15:59' Msa='5' Msro='560' Trans='2022'
+		 Ventas='15.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1926' Hora='18:05' Msa='1' Msro='560' Trans='2023'
+		 Ventas='23.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1927' Hora='18:05' Msa='2' Msro='510' Trans='2024'
+		 Ventas='7.50'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1928' Hora='18:37' Msa='27' Msro='510' Trans='2025'
+		 Ventas='10.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1929' Hora='18:57' Msa='6' Msro='560' Trans='2026'
+		 Ventas='29.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1930' Hora='19:32' Msa='90' Msro='540' Trans='2027'
+		 Ventas='25.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1931' Hora='19:35' Msa='13' Msro='570' Trans='2028'
+		 Ventas='17.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1932' Hora='19:55' Msa='90' Msro='570' Trans='2029'
+		 Ventas='29.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1933' Hora='20:20' Msa='3' Msro='510' Trans='2030'
+		 Ventas='15.50'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1934' Hora='20:22' Msa='27' Msro='510' Trans='2031'
+		 Ventas='10.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1935' Hora='20:33' Msa='5' Msro='570' Trans='2032'
+		 Ventas='18.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1936' Hora='20:34' Msa='90' Msro='540' Trans='2033'
+		 Ventas='32.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1937' Hora='20:36' Msa='15' Msro='510' Trans='2034'
+		 Ventas='20.50'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1938' Hora='20:53' Msa='13' Msro='570' Trans='2035'
+		 Ventas='53.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1939' Hora='20:53' Msa='2' Msro='560' Trans='2036'
+		 Ventas='29.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1940' Hora='20:56' Msa='10' Msro='560' Trans='2037'
+		 Ventas='56.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1941' Hora='21:16' Msa='90' Msro='570' Trans='2038'
+		 Ventas='9.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1942' Hora='21:44' Msa='4' Msro='570' Trans='2039'
+		 Ventas='24.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1943' Hora='21:47' Msa='3' Msro='570' Trans='2040'
+		 Ventas='24.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1944' Hora='22:23' Msa='2' Msro='570' Trans='2041'
+		 Ventas='16.50'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1945' Hora='22:30' Msa='7' Msro='570' Trans='2042'
+		 Ventas='11.00'/>
+	<z:row FECHA='03/10/2017' Fecha_Trans='20171003' Fiscal='1946' Hora='23:57' Msa='1' Msro='570' Trans='2045'
+		 Ventas='0.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1947' Hora='12:58' Msa='90' Msro='510' Trans='2047'
+		 Ventas='2.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1948' Hora='13:16' Msa='2' Msro='510' Trans='2048'
+		 Ventas='15.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1949' Hora='13:27' Msa='14' Msro='540' Trans='2049'
+		 Ventas='89.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1950' Hora='13:40' Msa='6' Msro='510' Trans='2050'
+		 Ventas='26.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1951' Hora='13:41' Msa='3' Msro='540' Trans='2051'
+		 Ventas='44.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1952' Hora='13:43' Msa='1' Msro='540' Trans='2052'
+		 Ventas='16.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1953' Hora='13:54' Msa='2' Msro='500' Trans='2053'
+		 Ventas='36.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1954' Hora='13:56' Msa='90' Msro='550' Trans='2054'
+		 Ventas='6.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1955' Hora='15:13' Msa='1' Msro='530' Trans='2055'
+		 Ventas='14.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1956' Hora='15:28' Msa='3' Msro='570' Trans='2056'
+		 Ventas='21.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1957' Hora='15:49' Msa='4' Msro='510' Trans='2057'
+		 Ventas='19.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1958' Hora='16:17' Msa='2' Msro='510' Trans='2058'
+		 Ventas='47.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1959' Hora='16:50' Msa='5' Msro='530' Trans='2059'
+		 Ventas='19.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1960' Hora='18:12' Msa='90' Msro='570' Trans='2060'
+		 Ventas='37.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1961' Hora='18:22' Msa='89' Msro='540' Trans='2061'
+		 Ventas='23.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1962' Hora='19:01' Msa='89' Msro='540' Trans='2062'
+		 Ventas='32.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1963' Hora='19:05' Msa='90' Msro='530' Trans='2063'
+		 Ventas='39.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1964' Hora='19:22' Msa='2' Msro='570' Trans='2064'
+		 Ventas='26.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1965' Hora='19:33' Msa='4' Msro='530' Trans='2065'
+		 Ventas='16.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1966' Hora='19:38' Msa='3' Msro='530' Trans='2066'
+		 Ventas='29.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1967' Hora='19:43' Msa='10' Msro='570' Trans='2067'
+		 Ventas='27.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1968' Hora='19:47' Msa='5' Msro='510' Trans='2068'
+		 Ventas='40.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1969' Hora='19:54' Msa='11' Msro='510' Trans='2069'
+		 Ventas='22.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1970' Hora='20:00' Msa='90' Msro='550' Trans='2070'
+		 Ventas='12.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1971' Hora='20:20' Msa='13' Msro='570' Trans='2071'
+		 Ventas='23.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1972' Hora='20:29' Msa='3' Msro='530' Trans='2072'
+		 Ventas='33.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1973' Hora='20:34' Msa='2' Msro='530' Trans='2073'
+		 Ventas='17.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1974' Hora='20:34' Msa='1' Msro='530' Trans='2074'
+		 Ventas='17.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1975' Hora='20:36' Msa='4' Msro='510' Trans='2075'
+		 Ventas='17.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1976' Hora='20:49' Msa='7' Msro='540' Trans='2076'
+		 Ventas='0.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1977' Hora='21:04' Msa='15' Msro='570' Trans='2077'
+		 Ventas='32.50'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1978' Hora='21:13' Msa='3' Msro='530' Trans='2078'
+		 Ventas='41.00'/>
+	<z:row FECHA='04/10/2017' Fecha_Trans='20171004' Fiscal='1979' Hora='22:07' Msa='90' Msro='530' Trans='2079'
+		 Ventas='14.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1980' Hora='13:01' Msa='2' Msro='560' Trans='2081'
+		 Ventas='29.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1981' Hora='13:24' Msa='4' Msro='560' Trans='2082'
+		 Ventas='22.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1982' Hora='14:05' Msa='3' Msro='560' Trans='2083'
+		 Ventas='24.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1983' Hora='14:13' Msa='2' Msro='600' Trans='2084'
+		 Ventas='19.11'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1984' Hora='15:03' Msa='15' Msro='570' Trans='2085'
+		 Ventas='30.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1985' Hora='15:06' Msa='4' Msro='530' Trans='2086'
+		 Ventas='32.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1986' Hora='15:18' Msa='3' Msro='570' Trans='2087'
+		 Ventas='9.75'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1987' Hora='15:18' Msa='2' Msro='560' Trans='2088'
+		 Ventas='14.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1988' Hora='15:21' Msa='10' Msro='560' Trans='2089'
+		 Ventas='13.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1989' Hora='15:45' Msa='90' Msro='600' Trans='2090'
+		 Ventas='12.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1990' Hora='16:37' Msa='1' Msro='560' Trans='2091'
+		 Ventas='10.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1991' Hora='16:59' Msa='3' Msro='530' Trans='2092'
+		 Ventas='81.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1992' Hora='17:15' Msa='90' Msro='600' Trans='2093'
+		 Ventas='12.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1993' Hora='17:18' Msa='10' Msro='560' Trans='2094'
+		 Ventas='27.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1994' Hora='18:26' Msa='3' Msro='570' Trans='2095'
+		 Ventas='19.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1995' Hora='19:04' Msa='1' Msro='530' Trans='2096'
+		 Ventas='22.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1996' Hora='19:09' Msa='2' Msro='530' Trans='2097'
+		 Ventas='38.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1997' Hora='19:12' Msa='13' Msro='560' Trans='2098'
+		 Ventas='43.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1998' Hora='19:13' Msa='5' Msro='560' Trans='2099'
+		 Ventas='10.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='1999' Hora='19:19' Msa='4' Msro='570' Trans='2100'
+		 Ventas='16.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2000' Hora='19:19' Msa='1' Msro='560' Trans='2101'
+		 Ventas='14.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2001' Hora='19:29' Msa='3' Msro='530' Trans='2102'
+		 Ventas='27.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2002' Hora='19:29' Msa='90' Msro='600' Trans='2103'
+		 Ventas='36.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2003' Hora='19:40' Msa='90' Msro='600' Trans='2104'
+		 Ventas='17.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2004' Hora='19:46' Msa='8' Msro='530' Trans='2105'
+		 Ventas='16.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2005' Hora='19:58' Msa='5' Msro='570' Trans='2106'
+		 Ventas='14.25'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2006' Hora='20:33' Msa='3' Msro='560' Trans='2107'
+		 Ventas='40.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2007' Hora='20:34' Msa='2' Msro='570' Trans='2108'
+		 Ventas='12.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2008' Hora='20:46' Msa='14' Msro='530' Trans='2109'
+		 Ventas='41.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2009' Hora='20:49' Msa='10' Msro='560' Trans='2110'
+		 Ventas='10.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2010' Hora='21:27' Msa='3' Msro='570' Trans='2111'
+		 Ventas='20.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2011' Hora='21:31' Msa='2' Msro='570' Trans='2112'
+		 Ventas='21.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2012' Hora='21:37' Msa='10' Msro='530' Trans='2113'
+		 Ventas='37.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2013' Hora='21:39' Msa='4' Msro='530' Trans='2114'
+		 Ventas='16.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2014' Hora='21:45' Msa='3' Msro='530' Trans='2115'
+		 Ventas='13.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2015' Hora='21:47' Msa='12' Msro='530' Trans='2116'
+		 Ventas='38.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2016' Hora='21:57' Msa='5' Msro='570' Trans='2117'
+		 Ventas='28.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2017' Hora='22:18' Msa='90' Msro='570' Trans='2118'
+		 Ventas='12.50'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2018' Hora='22:21' Msa='8' Msro='570' Trans='2119'
+		 Ventas='22.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2019' Hora='23:16' Msa='2' Msro='530' Trans='2120'
+		 Ventas='41.00'/>
+	<z:row FECHA='05/10/2017' Fecha_Trans='20171005' Fiscal='2020' Hora='23:44' Msa='1' Msro='530' Trans='2121'
+		 Ventas='19.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2021' Hora='00:04' Msa='2' Msro='570' Trans='2122'
+		 Ventas='22.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2022' Hora='12:47' Msa='3' Msro='510' Trans='2124'
+		 Ventas='19.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2023' Hora='12:48' Msa='13' Msro='550' Trans='2125'
+		 Ventas='81.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2024' Hora='13:17' Msa='27' Msro='510' Trans='2126'
+		 Ventas='11.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2025' Hora='13:25' Msa='15' Msro='510' Trans='2127'
+		 Ventas='47.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2026' Hora='13:36' Msa='10' Msro='560' Trans='2128'
+		 Ventas='45.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2027' Hora='14:14' Msa='3' Msro='570' Trans='2129'
+		 Ventas='24.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2028' Hora='14:54' Msa='2' Msro='530' Trans='2130'
+		 Ventas='12.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2029' Hora='14:58' Msa='1' Msro='560' Trans='2131'
+		 Ventas='25.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2030' Hora='15:01' Msa='3' Msro='560' Trans='2132'
+		 Ventas='30.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2031' Hora='15:07' Msa='2' Msro='500' Trans='2133'
+		 Ventas='9.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2032' Hora='16:42' Msa='4' Msro='530' Trans='2134'
+		 Ventas='13.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2033' Hora='17:13' Msa='90' Msro='570' Trans='2135'
+		 Ventas='36.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2034' Hora='17:14' Msa='27' Msro='510' Trans='2136'
+		 Ventas='77.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2035' Hora='17:28' Msa='2' Msro='570' Trans='2137'
+		 Ventas='56.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2036' Hora='17:53' Msa='2' Msro='530' Trans='2138'
+		 Ventas='50.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2037' Hora='17:56' Msa='4' Msro='560' Trans='2139'
+		 Ventas='36.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2038' Hora='18:12' Msa='10' Msro='510' Trans='2140'
+		 Ventas='53.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2039' Hora='18:20' Msa='90' Msro='570' Trans='2141'
+		 Ventas='27.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2040' Hora='18:31' Msa='89' Msro='540' Trans='2142'
+		 Ventas='40.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2041' Hora='18:54' Msa='90' Msro='540' Trans='2143'
+		 Ventas='26.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2042' Hora='19:24' Msa='7' Msro='530' Trans='2144'
+		 Ventas='11.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2043' Hora='19:24' Msa='27' Msro='510' Trans='2145'
+		 Ventas='17.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2044' Hora='19:28' Msa='2' Msro='530' Trans='2146'
+		 Ventas='41.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2045' Hora='19:45' Msa='11' Msro='530' Trans='2147'
+		 Ventas='22.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2046' Hora='19:52' Msa='4' Msro='560' Trans='2148'
+		 Ventas='16.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2047' Hora='19:55' Msa='90' Msro='570' Trans='2149'
+		 Ventas='12.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2048' Hora='19:58' Msa='2' Msro='560' Trans='2150'
+		 Ventas='14.62'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2049' Hora='20:00' Msa='3' Msro='510' Trans='2151'
+		 Ventas='39.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2050' Hora='20:17' Msa='2' Msro='560' Trans='2152'
+		 Ventas='12.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2051' Hora='20:18' Msa='90' Msro='600' Trans='2153'
+		 Ventas='16.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2052' Hora='20:26' Msa='15' Msro='510' Trans='2154'
+		 Ventas='45.12'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2053' Hora='20:27' Msa='8' Msro='530' Trans='2155'
+		 Ventas='24.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2054' Hora='20:28' Msa='14' Msro='530' Trans='2156'
+		 Ventas='32.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2055' Hora='20:44' Msa='12' Msro='570' Trans='2157'
+		 Ventas='54.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2056' Hora='20:47' Msa='4' Msro='560' Trans='2158'
+		 Ventas='26.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2057' Hora='20:48' Msa='27' Msro='510' Trans='2159'
+		 Ventas='24.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2058' Hora='20:48' Msa='3' Msro='510' Trans='2160'
+		 Ventas='20.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2059' Hora='21:15' Msa='2' Msro='530' Trans='2161'
+		 Ventas='28.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2060' Hora='21:16' Msa='13' Msro='570' Trans='2162'
+		 Ventas='45.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2061' Hora='21:18' Msa='90' Msro='570' Trans='2163'
+		 Ventas='12.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2062' Hora='21:21' Msa='3' Msro='530' Trans='2164'
+		 Ventas='42.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2063' Hora='21:27' Msa='15' Msro='510' Trans='2165'
+		 Ventas='30.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2064' Hora='21:30' Msa='4' Msro='570' Trans='2166'
+		 Ventas='31.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2065' Hora='21:32' Msa='5' Msro='530' Trans='2167'
+		 Ventas='31.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2066' Hora='21:52' Msa='11' Msro='560' Trans='2168'
+		 Ventas='27.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2067' Hora='21:54' Msa='9' Msro='570' Trans='2169'
+		 Ventas='17.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2068' Hora='22:04' Msa='3' Msro='530' Trans='2170'
+		 Ventas='24.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2069' Hora='22:08' Msa='4' Msro='510' Trans='2171'
+		 Ventas='56.00'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2070' Hora='22:13' Msa='2' Msro='570' Trans='2172'
+		 Ventas='21.50'/>
+	<z:row FECHA='06/10/2017' Fecha_Trans='20171006' Fiscal='2071' Hora='22:17' Msa='12' Msro='560' Trans='2173'
+		 Ventas='31.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2072' Hora='13:06' Msa='2' Msro='560' Trans='2175'
+		 Ventas='41.87'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2073' Hora='13:09' Msa='4' Msro='560' Trans='2176'
+		 Ventas='31.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2074' Hora='13:31' Msa='3' Msro='510' Trans='2177'
+		 Ventas='24.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2075' Hora='13:40' Msa='13' Msro='560' Trans='2178'
+		 Ventas='64.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2076' Hora='14:02' Msa='15' Msro='510' Trans='2179'
+		 Ventas='43.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2077' Hora='14:03' Msa='6' Msro='570' Trans='2180'
+		 Ventas='70.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2078' Hora='14:28' Msa='27' Msro='510' Trans='2181'
+		 Ventas='18.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2079' Hora='14:51' Msa='2' Msro='560' Trans='2182'
+		 Ventas='25.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2080' Hora='14:56' Msa='4' Msro='530' Trans='2183'
+		 Ventas='20.87'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2081' Hora='15:05' Msa='9' Msro='570' Trans='2184'
+		 Ventas='10.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2082' Hora='15:25' Msa='6' Msro='530' Trans='2185'
+		 Ventas='32.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2083' Hora='15:40' Msa='16' Msro='510' Trans='2186'
+		 Ventas='100.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2084' Hora='16:42' Msa='4' Msro='530' Trans='2187'
+		 Ventas='40.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2085' Hora='17:21' Msa='2' Msro='560' Trans='2188'
+		 Ventas='12.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2086' Hora='18:15' Msa='6' Msro='510' Trans='2189'
+		 Ventas='39.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2087' Hora='18:51' Msa='2' Msro='570' Trans='2190'
+		 Ventas='39.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2088' Hora='19:17' Msa='89' Msro='570' Trans='2191'
+		 Ventas='63.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2089' Hora='19:24' Msa='3' Msro='560' Trans='2192'
+		 Ventas='30.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2090' Hora='19:40' Msa='11' Msro='530' Trans='2193'
+		 Ventas='36.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2091' Hora='19:40' Msa='12' Msro='570' Trans='2194'
+		 Ventas='20.25'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2092' Hora='19:42' Msa='4' Msro='530' Trans='2195'
+		 Ventas='55.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2093' Hora='19:47' Msa='2' Msro='510' Trans='2196'
+		 Ventas='25.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2094' Hora='19:48' Msa='10' Msro='560' Trans='2197'
+		 Ventas='35.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2095' Hora='19:55' Msa='90' Msro='600' Trans='2198'
+		 Ventas='15.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2096' Hora='20:08' Msa='3' Msro='560' Trans='2199'
+		 Ventas='19.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2097' Hora='20:09' Msa='89' Msro='600' Trans='2200'
+		 Ventas='46.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2098' Hora='20:12' Msa='90' Msro='540' Trans='2201'
+		 Ventas='29.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2099' Hora='20:13' Msa='15' Msro='510' Trans='2202'
+		 Ventas='28.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2100' Hora='20:17' Msa='5' Msro='530' Trans='2203'
+		 Ventas='21.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2101' Hora='20:22' Msa='4' Msro='570' Trans='2204'
+		 Ventas='24.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2102' Hora='20:23' Msa='16' Msro='510' Trans='2205'
+		 Ventas='36.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2103' Hora='20:28' Msa='13' Msro='570' Trans='2206'
+		 Ventas='59.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2104' Hora='20:33' Msa='6' Msro='530' Trans='2207'
+		 Ventas='79.12'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2105' Hora='20:44' Msa='3' Msro='510' Trans='2208'
+		 Ventas='53.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2106' Hora='20:47' Msa='2' Msro='560' Trans='2209'
+		 Ventas='42.12'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2107' Hora='20:51' Msa='5' Msro='530' Trans='2210'
+		 Ventas='18.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2108' Hora='20:55' Msa='90' Msro='600' Trans='2211'
+		 Ventas='15.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2109' Hora='21:00' Msa='4' Msro='570' Trans='2212'
+		 Ventas='40.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2110' Hora='21:03' Msa='89' Msro='570' Trans='2213'
+		 Ventas='25.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2111' Hora='21:22' Msa='90' Msro='600' Trans='2214'
+		 Ventas='36.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2112' Hora='21:28' Msa='13' Msro='560' Trans='2215'
+		 Ventas='34.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2113' Hora='21:32' Msa='4' Msro='570' Trans='2216'
+		 Ventas='22.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2114' Hora='21:45' Msa='6' Msro='530' Trans='2217'
+		 Ventas='65.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2115' Hora='21:47' Msa='15' Msro='560' Trans='2218'
+		 Ventas='52.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2116' Hora='22:00' Msa='90' Msro='600' Trans='2219'
+		 Ventas='28.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2117' Hora='22:02' Msa='2' Msro='510' Trans='2220'
+		 Ventas='37.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2118' Hora='22:05' Msa='4' Msro='570' Trans='2221'
+		 Ventas='9.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2119' Hora='22:15' Msa='13' Msro='530' Trans='2222'
+		 Ventas='30.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2120' Hora='22:20' Msa='5' Msro='510' Trans='2223'
+		 Ventas='18.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2121' Hora='22:24' Msa='3' Msro='510' Trans='2224'
+		 Ventas='39.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2122' Hora='22:46' Msa='4' Msro='530' Trans='2225'
+		 Ventas='25.00'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2123' Hora='22:54' Msa='2' Msro='570' Trans='2226'
+		 Ventas='27.50'/>
+	<z:row FECHA='07/10/2017' Fecha_Trans='20171007' Fiscal='2124' Hora='23:33' Msa='2' Msro='530' Trans='2227'
+		 Ventas='30.00'/>
+</rs:data>
+</xml>

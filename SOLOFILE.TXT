@@ -1,0 +1,158 @@
+DEPARTAMENTO     NOMBRE           UNID_COMPRA  Cant_Compra  UNID_CONSUMO  Cant_Consumo
+--------------------------------------------------------------------------------------
+ADERESOS  Y  CO  ACEITE DE AJO    TANQUE          1         Onzas      640.00
+ADERESOS  Y  CO  ACEITE VEGETAL   TANQUE          1         Onzas      640.00
+ADERESOS  Y  CO  AJONJOLI         LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  AJONJOLI NEGRO   LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  ALGA             PAQUETE         1        Unidad      200.00
+ADERESOS  Y  CO  ALMENDRAS        LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  ARROZ COCINA     BULTO           1         Onzas     1200.00
+ADERESOS  Y  CO  AZUCAR           BULTO           1         Onzas      960.00
+ADERESOS  Y  CO  AZUCAR EN SOBRE  PAQUETE         1        Unidad      500.00
+ADERESOS  Y  CO  CALDO POLLO      LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  CURRY TAILANDES  CAJA            1         Onzas        8.00
+ADERESOS  Y  CO  FIDEO DE ARROZ   LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  GENGIBRE         TANQUE          1         Onzas      160.00
+ADERESOS  Y  CO  HARINA           SACO            1         Onzas      400.00
+ADERESOS  Y  CO  HONDASHI         CAJA            1         Onzas       32.00
+ADERESOS  Y  CO  HONGO SECO       PAQUETE         1         Onzas       16.00
+ADERESOS  Y  CO  HUEVOS           CARTON          1        Unidad       30.00
+ADERESOS  Y  CO  KETCHUP          GALON           1         Onzas      128.00
+ADERESOS  Y  CO  KRONCHI          LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  MAIZ LATA        LATA            1         Onzas        8.00
+ADERESOS  Y  CO  MISO             PAQUETE         1         Onzas       16.00
+ADERESOS  Y  CO  MOSTAZA          GALON           1         Onzas      128.00
+ADERESOS  Y  CO  PANKO            BULTO           1         Onzas      320.00
+ADERESOS  Y  CO  PISTACHO         PAQUETE         1         Onzas       16.00
+ADERESOS  Y  CO  PURE             CAJA            1         Onzas       14.00
+ADERESOS  Y  CO  SAL              SACO            1         Onzas      800.00
+ADERESOS  Y  CO  SAL Y PIMIENTA   LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA CANGREJO   GALON           1         Onzas      128.00
+ADERESOS  Y  CO  SALSA CHICKEN S  LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA CHIPOTLE   GALON           1         Onzas      128.00
+ADERESOS  Y  CO  SALSA DULCE      TANQUE          1         Onzas      640.00
+ADERESOS  Y  CO  SALSA MARACUYA   1/2 GALON       1         Onzas       64.00
+ADERESOS  Y  CO  SALSA MAYONESA   LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA MIEL Y MO  GALON           1         Onzas      128.00
+ADERESOS  Y  CO  SALSA PIMENTON   LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA PIMIENTA   LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA SALMON SA  LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA SOYA MADU  TANQUE          1         Onzas      640.00
+ADERESOS  Y  CO  SALSA TARTARA    LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA TATAKE     LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  SALSA TERIYAKI   TANQUE          1         Onzas      640.00
+ADERESOS  Y  CO  SOYA             TANQUE          1         Onzas      640.00
+ADERESOS  Y  CO  TEMPURA          BULTO           1         Onzas      640.00
+ADERESOS  Y  CO  TOGARASHI        LIBRA           1         Onzas       16.00
+ADERESOS  Y  CO  VINAGRE PREPARA  TANQUE          1         Onzas      640.00
+ADERESOS  Y  CO  WASABI           PAQUETE         1         Onzas       35.00
+ADERESOS  Y  CO  YAKISOBA         PAQUETE         1         Onzas        8.80
+BEBIDAS             DOMICILIO     UNIDAD          1        Unidad        1.00
+BEBIDAS          AGUA  BOTELLA    CAJA            1        Unidad       24.00
+BEBIDAS          AGUA DE PIPA     UNIDAD          1        Unidad        1.00
+BEBIDAS          AGUA PERRIER     CAJA            1        Unidad       24.00
+BEBIDAS          AGUARDIENTE      BOTELLA         1         Onzas       16.00
+BEBIDAS          BAILEYS          BOTELLA         1         Onzas       16.00
+BEBIDAS          CACHASA          BOTELLA         1         Onzas       16.00
+BEBIDAS          CAFE             CAJA            1        Unidad       36.00
+BEBIDAS          CERVEZA IMPORTA  CAJA            1        Unidad       24.00
+BEBIDAS          CERVEZA NACIONA  CAJA            1        Unidad       24.00
+BEBIDAS          FRANGELICO       BOTELLA         1         Onzas       16.00
+BEBIDAS          GINEBRA          BOTELLA         1         Onzas       16.00
+BEBIDAS          JUGOS NATURALES  UNIDAD          1        Unidad        1.00
+BEBIDAS          KALUA            BOTELLA         1         Onzas       16.00
+BEBIDAS          LIPTON TE        CAJA            1        Unidad       24.00
+BEBIDAS          RON ABUELO       BOTELLA         1         Onzas       16.00
+BEBIDAS          RON BACARDI      BOTELLA         1         Onzas       16.00
+BEBIDAS          RON CALDAS       BOTELLA         1         Onzas       16.00
+BEBIDAS          SAKE BOTELLA     CAJA            1        Unidad       12.00
+BEBIDAS          SECO HERRERANO   BOTELLA         1         Onzas       16.00
+BEBIDAS          SMOOTIES         CAJA            1         Onzas       32.00
+BEBIDAS          SODA DE LATA     PAQUETE         1        Unidad       12.00
+BEBIDAS          TE CALIENTE      CAJA            1        Unidad       25.00
+BEBIDAS          TEQUILA          BOTELLA         1         Onzas       16.00
+BEBIDAS          TEQUILA J . C    BOTELLA         1         Onzas       16.00
+BEBIDAS          VINO BLANCO MOR  CAJA            1        Unidad       13.00
+BEBIDAS          VINO TINTO MORA  CAJA            1        Unidad       13.00
+BEBIDAS          VODKA ABSOLUT    BOTELLA         1         Onzas       16.00
+BEBIDAS          VODKA GREY COOS  BOTELLA         1         Onzas       16.00
+BEBIDAS          VODKA SMIRNOFF   BOTELLA         1         Onzas       16.00
+BEBIDAS          WHISKEY CHIVAS   BOTELLA         1         Onzas       16.00
+BEBIDAS          WHISKEY JOHNNI   BOTELLA         1         Onzas       16.00
+BEBIDAS          WHISKEY OLD PAR  BOTELLA         1         Onzas       16.00
+LEGUMBRES Y FRU  AGUACATE         LIBRA           1         Onzas       12.00
+LEGUMBRES Y FRU  BERENJENA        LIBRA           1         Onzas       14.50
+LEGUMBRES Y FRU  BROCOLI          LIBRA           1         Onzas        8.00
+LEGUMBRES Y FRU  CEBOLLA          LIBRA           1         Onzas       15.00
+LEGUMBRES Y FRU  CEBOLLA MORADA   LIBRA           1         Onzas       14.50
+LEGUMBRES Y FRU  CEBOLLINA        LIBRA           1         Onzas       12.00
+LEGUMBRES Y FRU  CHILE FRESCO SE  LIBRA           1         Onzas       15.00
+LEGUMBRES Y FRU  ESPARRAGO        LIBRA           1         Onzas       16.00
+LEGUMBRES Y FRU  ESPINACA         LIBRA           1         Onzas       10.00
+LEGUMBRES Y FRU  FRIJOL NACIDO    LIBRA           1         Onzas       16.00
+LEGUMBRES Y FRU  FRIJOLES CHINOS  LIBRA           1         Onzas       16.00
+LEGUMBRES Y FRU  HONGO            LIBRA           1         Onzas       16.00
+LEGUMBRES Y FRU  LECHUGA          LIBRA           1         Onzas       12.00
+LEGUMBRES Y FRU  LIMON            UNIDAD          1        Unidad        1.00
+LEGUMBRES Y FRU  PEPINO           LIBRA           1         Onzas       11.00
+LEGUMBRES Y FRU  PIMENTON ROJO    LIBRA           1         Onzas       11.00
+LEGUMBRES Y FRU  PIMENTON VERDE   LIBRA           1         Onzas       11.00
+LEGUMBRES Y FRU  PLATANOS         UNIDAD          1        Unidad         .50
+LEGUMBRES Y FRU  TOMATE           LIBRA           1         Onzas       12.00
+LEGUMBRES Y FRU  ZANAHORIA        LIBRA           1         Onzas       16.00
+LEGUMBRES Y FRU  ZUCHINI          LIBRA           1         Onzas       16.00
+PAPEL Y PLASTIC  BOLSA TRANSPARE  PAQUETE         1        Unidad      100.00
+PAPEL Y PLASTIC  BOLSAS PARA LLE  BULTO           1        Unidad     1000.00
+PAPEL Y PLASTIC  CARRIZOS         CAJA            1        Unidad      500.00
+PAPEL Y PLASTIC  CUCHARA SOPERA   CAJA            1        Unidad     1000.00
+PAPEL Y PLASTIC  ENVASE SOPA 16o  CAJA            1        Unidad      500.00
+PAPEL Y PLASTIC  GUANTES LATEX    CAJA            1        Unidad      100.00
+PAPEL Y PLASTIC  PALITO CHINO     CAJA            1        Unidad     3000.00
+PAPEL Y PLASTIC  PALITO DE BROCH  BOLSITA         1        Unidad      100.00
+PAPEL Y PLASTIC  PAPEL   TOALLA   CAJA            1        Unidad       12.00
+PAPEL Y PLASTIC  PLASTICOS WRAP   CAJA            1        Unidad       24.00
+PAPEL Y PLASTIC  PLATOS ALUMINIO  CAJA            1        Unidad      500.00
+PAPEL Y PLASTIC  PLATOS ALUMINIO  CAJA            1        Unidad     1000.00
+PAPEL Y PLASTIC  PLATOS FOAM # 2  BULTO           1        Unidad      500.00
+PAPEL Y PLASTIC  PLATOS FOAM 4-D  BULTO           1        Unidad      500.00
+PAPEL Y PLASTIC  PLATOS FOAM 9 *  BULTO           1        Unidad      250.00
+PAPEL Y PLASTIC  PLATOS FOAM OVA  BULTO           1        Unidad      500.00
+PAPEL Y PLASTIC  REVOLVEDORES 3   BULTO          50        Unidad        1.00
+PAPEL Y PLASTIC  SERVILLETA       BULTO           1        Unidad     1920.00
+PAPEL Y PLASTIC  SOUFLET 2 ONZAS  CAJA            1        Unidad     2500.00
+PAPEL Y PLASTIC  TAPA SOUFLET 2   CAJA            1        Unidad     2500.00
+PAPEL Y PLASTIC  TENEDORES GRAND  CAJA            1        Unidad     1000.00
+PAPEL Y PLASTIC  VASOS 6 ONZAS    CAJA            1        Unidad     1000.00
+POSTRES          BROWNIE          PLATOS          1       PORCION       24.00
+POSTRES          FLAN             PLATOS          1       PORCION        8.00
+POSTRES          KAMIKAZE         PLATOS          1       PORCION        8.00
+PRODUCTOS CONGE  ANGUILA          PAQUETE         1         Onzas        8.00
+PRODUCTOS CONGE  ATUN FRESCO      LIBRA           1         Onzas       16.00
+PRODUCTOS CONGE  CALAMAR          LIBRA           1         Onzas       11.50
+PRODUCTOS CONGE  CAMARONES        LIBRA           1         Onzas       15.00
+PRODUCTOS CONGE  CANGREJO         LIBRA           1         Onzas       16.00
+PRODUCTOS CONGE  CANGREJO NUEVO/  PAQUETE         1         Onzas       17.00
+PRODUCTOS CONGE  CARNE DE FILETE  LIBRA           1         Onzas       15.00
+PRODUCTOS CONGE  ENSALADA DE ALG  CAJA            1         Onzas       70.40
+PRODUCTOS CONGE  HELADO           GALON           1         Onzas      304.00
+PRODUCTOS CONGE  HIELO            BOLSA           1         Onzas      128.00
+PRODUCTOS CONGE  LANGOSTINO       LIBRA           1         Onzas       14.50
+PRODUCTOS CONGE  MASAGO           CAJA            1         Onzas       70.40
+PRODUCTOS CONGE  POLLO PECHUGA    LIBRA           1         Onzas       16.00
+PRODUCTOS CONGE  PULPO            LIBRA           1         Onzas        8.00
+PRODUCTOS CONGE  SALMON AHUMADO   LIBRA           1         Onzas       15.00
+PRODUCTOS CONGE  SALMON FRESCO    LIBRA           1         Onzas       15.00
+PRODUCTOS DE LI  ALAMBRE          UNIDAD          1        Unidad        1.00
+PRODUCTOS DE LI  BRILLO           UNIDAD          1        Unidad        1.00
+PRODUCTOS DE LI  CLOROX           GALON          14         Onzas      120.00
+PRODUCTOS DE LI  JABON  MANOS     CAJA            1        Unidad       12.00
+PRODUCTOS DE LI  LAVAPLATOS CREM  CAJA            1        Unidad       24.00
+PRODUCTOS DE LI  LIMPIADOR ARON   CAJA            1        Unidad       10.00
+PRODUCTOS DE LI  LIMPIADOR EN PO  CAJA            1        Unidad       12.00
+PRODUCTOS LACTE  LECHE            CARTON          1         Onzas       32.00
+PRODUCTOS LACTE  MANTEQUILLA      LIBRA           1         Onzas       16.00
+PRODUCTOS LACTE  QUESO CREMA      LIBRA           1         Onzas       16.00
+PRODUCTOS LACTE  QUESO GOUDA      LIBRA           1         Onzas       16.00
+PRODUCTOS LACTE  QUESO TOFU       CAJA            1         Onzas       12.00
+RECETAS          32121            1/2 GALON       1         Onzas        1.00
+RECETAS          7987987          1/2 GALON       1         Onzas        1.00
