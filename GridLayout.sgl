@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!--
+    Data Dynamics SharpGrid layout data
+    Layout generated at 2006-09-11 22:55
+
+    Copyright © 2000,2001 Stinga -->
+<SharpGridLayout version="2.0" build="1100">
+ <Layouts>
+  <Layout name="0" dataMode="1">
+   <Prop name="AllowAddNew" value="0"/>
+   <Prop name="AllowDelete" value="0"/>
+   <Prop name="AllowEdit" value="1"/>
+   <Prop name="AlphaBlendEnabled" value="0"/>
+   <Prop name="Appearance" value="2"/>
+   <Prop name="AutoFields" value="1"/>
+   <Prop name="AutoGroup" value="0"/>
+   <Prop name="AutoResize" value="1"/>
+   <Prop name="AutoScroll" value="1"/>
+   <Prop name="AutoSearch" value="0"/>
+   <Prop name="AutoSearchDelay" value="2000"/>
+   <Prop name="BackColor" value="-2147483636"/>
+   <Prop name="BkgPictureAlignment" value="9"/>
+   <Prop name="CacheAllRecords" value="1"/>
+   <Prop name="Caption" value=""/>
+   <Prop name="CellsBorderColor" value="0"/>
+   <Prop name="CellsBorderVisible" value="1"/>
+   <Prop name="CellTips" value="0"/>
+   <Prop name="CellTipsDelay" value="1000"/>
+   <Prop name="ColorEven" value="12648447"/>
+   <Prop name="ColorOdd" value="14737632"/>
+   <Prop name="ColumnClickSort" value="0"/>
+   <Prop name="ColWidthMax" value="0"/>
+   <Prop name="ColWidthMin" value="0"/>
+   <Prop name="CustomBkgDraw" value="0"/>
+   <Prop name="DataColCount" value="2"/>
+   <Prop name="DataMode" value="1"/>
+   <Prop name="DataRowCount" value="2"/>
+   <Prop name="DefaultColWidth" value="1219"/>
+   <Prop name="DefaultRowHeight" value="255"/>
+   <Prop name="DragAlphaLevel" value="206"/>
+   <Prop name="Enabled" value="1"/>
+   <Prop name="EnterKeyBehavior" value="1"/>
+   <Prop name="EqualColWidth" value="0"/>
+   <Prop name="EqualRowHeight" value="0"/>
+   <Prop name="EvenOddStyle" value="1"/>
+   <Prop name="FitLastColumn" value="0"/>
+   <Prop name="FlatScrollBars" value="0"/>
+   <Prop name="FocusRect" value="2"/>
+   <Prop name="FocusRectColor" value="0"/>
+   <Prop name="FocusRectLineWidth" value="1"/>
+   <Prop name="GridBorderStyle" value="1"/>
+   <Prop name="GridLines" value="2"/>
+   <Prop name="GridLinesColor" value="-2147483633"/>
+   <Prop name="GroupByBoxVisible" value="0"/>
+   <Prop name="GroupByBoxText" value=""/>
+   <Prop name="GroupIndentation" value="241"/>
+   <Prop name="HeadingColCount" value="0"/>
+   <Prop name="HeadingRowCount" value="1"/>
+   <Prop name="HScrollHeight" value="0"/>
+   <Prop name="InactiveSelection" value="1"/>
+   <Prop name="MaxColumns" value="8192"/>
+   <Prop name="MaxRows" value="4194304"/>
+   <Prop name="MultiSelect" value="0"/>
+   <Prop name="NavigationWrapMode" value="1"/>
+   <Prop name="NewRowPos" value="1"/>
+   <Prop name="OLEDragMode" value="0"/>
+   <Prop name="OLEDropMode" value="0"/>
+   <Prop name="OutlineLines" value="1"/>
+   <Prop name="PreviewPaneColumn" value=""/>
+   <Prop name="PreviewPanePosition" value="2"/>
+   <Prop name="PreviewPaneSize" value="2000"/>
+   <Prop name="PreviewPaneType" value="0"/>
+   <Prop name="RowHeightMax" value="0"/>
+   <Prop name="RowHeightMin" value="0"/>
+   <Prop name="RowNumbering" value="0"/>
+   <Prop name="ScrollBars" value="3"/>
+   <Prop name="ScrollBarTips" value="0"/>
+   <Prop name="ScrollBarTrack" value="0"/>
+   <Prop name="ScrollTipColumn" value=""/>
+   <Prop name="SelectionMode" value="2"/>
+   <Prop name="SkipReadOnly" value="0"/>
+   <Prop name="SpecialMode" value="0"/>
+   <Prop name="UserDragging" value="2"/>
+   <Prop name="UserHiding" value="0"/>
+   <Prop name="UserResizeAnimate" value="1"/>
+   <Prop name="UserResizing" value="3"/>
+   <Prop name="VScrollWidth" value="0"/>
+   <Columns headCols="0">
+    <Column key="Field0">
+     <Prop name="DBField" value="Field0.0"/>
+     <Prop name="DataType" value="8"/>
+     <Prop name="Width" value="1215"/>
+     <Prop name="Caption" value="Field0"/>
+     <Prop name="Hidden" value="0"/>
+     <Prop name="ReadOnly" value="0"/>
+     <Prop name="DataWidth" value="255"/>
+     <Prop name="AllowSizing" value="1"/>
+     <Prop name="AllowFocus" value="1"/>
+     <Prop name="FetchCellStyle" value="0"/>
+     <Prop name="Frozen" value="0"/>
+     <Prop name="SortOrder" value="0"/>
+     <Prop name="SortType" value="0"/>
+     <Prop name="MergeCells" value="0"/>
+     <Prop name="MaskEdit" value=""/>
+     <Prop name="MaskDataMode" value="0"/>
+     <Prop name="TagValue" type="0" value=""/>
+     <Control>
+      <Prop name="Type" value="0"/>
+      <Prop name="Width" value="-1"/>
+      <Prop name="Height" value="1000"/>
+      <Prop name="PopupRows" value="0"/>
+      <Prop name="AutoOpen" value="0"/>
+      <Prop name="PopupAlign" value="1"/>
+      <Prop name="BtnAlign" value="1"/>
+      <Prop name="ShowButton" value="0"/>
+      <Prop name="SortOrder" value="1"/>
+      <Prop name="ItemHeight" value="-1"/>
+     </Control>
+     <ColumnStyle name="">
+      <StyleData>
+       <Prop name="BasedOn" value="Normal"/>
+      </StyleData>
+     </ColumnStyle>
+    </Column>
+    <Column key="Field1">
+     <Prop name="DBField" value="Field1.1"/>
+     <Prop name="DataType" value="8"/>
+     <Prop name="Width" value="1215"/>
+     <Prop name="Caption" value="Field1"/>
+     <Prop name="Hidden" value="0"/>
+     <Prop name="ReadOnly" value="0"/>
+     <Prop name="DataWidth" value="255"/>
+     <Prop name="AllowSizing" value="1"/>
+     <Prop name="AllowFocus" value="1"/>
+     <Prop name="FetchCellStyle" value="0"/>
+     <Prop name="Frozen" value="0"/>
+     <Prop name="SortOrder" value="0"/>
+     <Prop name="SortType" value="0"/>
+     <Prop name="MergeCells" value="0"/>
+     <Prop name="MaskEdit" value=""/>
+     <Prop name="MaskDataMode" value="0"/>
+     <Prop name="TagValue" type="0" value=""/>
+     <Control>
+      <Prop name="Type" value="0"/>
+      <Prop name="Width" value="-1"/>
+      <Prop name="Height" value="1000"/>
+      <Prop name="PopupRows" value="0"/>
+      <Prop name="AutoOpen" value="0"/>
+      <Prop name="PopupAlign" value="1"/>
+      <Prop name="BtnAlign" value="1"/>
+      <Prop name="ShowButton" value="0"/>
+      <Prop name="SortOrder" value="1"/>
+      <Prop name="ItemHeight" value="-1"/>
+     </Control>
+     <ColumnStyle name="">
+      <StyleData>
+       <Prop name="BasedOn" value="Normal"/>
+      </StyleData>
+     </ColumnStyle>
+    </Column>
+   </Columns>
+   <Groups/>
+   <Filters action="0" textFilter="0" caseSensitive="0">
+    <Expression>
+     AND
+    </Expression>
+   </Filters>
+   <Styles>
+    <Style name="AddNewRow">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+     </StyleData>
+    </Style>
+    <Style name="Caption">
+     <StyleData>
+      <Prop name="BasedOn" value="Heading"/>
+      <Prop name="TextAlignment" value="5"/>
+      <Prop name="LineStyle" value="2"/>
+      <Prop name="CellBorder" value="0"/>
+     </StyleData>
+    </Style>
+    <Style name="CurrentCell">
+     <StyleData>
+      <Prop name="BasedOn" value="CurrentRow"/>
+     </StyleData>
+    </Style>
+    <Style name="CurrentRow">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+     </StyleData>
+    </Style>
+    <Style name="FilteredRow">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483633"/>
+     </StyleData>
+    </Style>
+    <Style name="Frozen">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="BackColor" value="15195094"/>
+     </StyleData>
+    </Style>
+    <Style name="GridBackground">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483640"/>
+      <Prop name="BackColor" value="-2147483636"/>
+      <Prop name="LineStyle" value="0"/>
+      <Prop name="EvenOddStyle" value="0"/>
+      <Prop name="CellPadding" value="0"/>
+      <Prop name="CellBorderSize" value="0"/>
+      <Prop name="CellBorderColor" value="0"/>
+      <Prop name="CellBorder" value="0"/>
+      <Prop name="CustomDrawStage" value="0"/>
+      <Prop name="AlphaBorder" value="255"/>
+      <Prop name="AlphaBkg" value="255"/>
+      <Prop name="AlphaBkgPicture" value="255"/>
+      <Prop name="AlphaContent" value="255"/>
+      <Prop name="BkgPictAlignment" value="9"/>
+     </StyleData>
+    </Style>
+    <Style name="GroupByBox">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483633"/>
+      <Prop name="BackColor" value="10592673"/>
+      <Prop name="GridLineColor" value="-2147483640"/>
+      <Prop name="TextAlignment" value="4"/>
+      <Prop name="WordWrap" value="0"/>
+      <Prop name="LineStyle" value="0"/>
+      <Prop name="CellPadding" value="65"/>
+      <Prop name="CellBorderColor" value="0"/>
+     </StyleData>
+    </Style>
+    <Style name="GroupByBoxCell">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+     </StyleData>
+    </Style>
+    <Style name="GroupFooter">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483630"/>
+      <Prop name="BackColor" value="14737632"/>
+      <Prop name="GridLineColor" value="-2147483640"/>
+      <Prop name="TextAlignment" value="4"/>
+      <Prop name="WordWrap" value="-1"/>
+     </StyleData>
+    </Style>
+    <Style name="GroupHeader">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483630"/>
+      <Prop name="BackColor" value="-2147483633"/>
+      <Prop name="GridLineColor" value="-2147483640"/>
+      <Prop name="TextAlignment" value="4"/>
+      <Prop name="WordWrap" value="-1"/>
+     </StyleData>
+    </Style>
+    <Style name="Heading">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483630"/>
+      <Prop name="BackColor" value="12632256"/>
+      <Prop name="GridLineColor" value="-2147483632"/>
+      <Prop name="BkgStyle" value="1"/>
+      <Prop name="TextAlignment" value="0"/>
+      <Prop name="WordWrap" value="0"/>
+      <Prop name="Ellipsis" value="1"/>
+      <Prop name="LineStyle" value="2"/>
+      <Prop name="EvenOddStyle" value="1"/>
+      <Prop name="CellBorderSize" value="0"/>
+      <Prop name="CellBorder" value="0"/>
+      <Prop name="DisplayType" value="1"/>
+      <Prop name="Appearance" value="2"/>
+      <Font>
+       <Prop name="Name" value="MS Sans Serif"/>
+       <Prop name="Size" value="0;82500"/>
+       <Prop name="Bold" value="0"/>
+       <Prop name="Italic" value="0"/>
+       <Prop name="Underline" value="0"/>
+       <Prop name="Strikethrough" value="0"/>
+       <Prop name="Weight" value="400"/>
+       <Prop name="Charset" value="0"/>
+      </Font>
+     </StyleData>
+    </Style>
+    <Style name="InactiveSelection">
+     <StyleData>
+      <Prop name="BasedOn" value="Selection"/>
+      <Prop name="BackColor" value="-2147483645"/>
+     </StyleData>
+    </Style>
+    <Style name="Normal">
+     <StyleData>
+      <Prop name="BasedOn" value=""/>
+      <Prop name="ForeColor" value="-2147483640"/>
+      <Prop name="BackColor" value="-2147483643"/>
+      <Prop name="BackColor2" value="-2147483643"/>
+      <Prop name="HighlightColor" value="-2147483628"/>
+      <Prop name="ShadowColor" value="-2147483632"/>
+      <Prop name="GridLineColor" value="-2147483633"/>
+      <Prop name="BkgStyle" value="1"/>
+      <Prop name="TextAlignment" value="0"/>
+      <Prop name="WordWrap" value="0"/>
+      <Prop name="Ellipsis" value="1"/>
+      <Prop name="LineStyle" value="2"/>
+      <Prop name="EvenOddStyle" value="1"/>
+      <Prop name="EvenColor" value="12648447"/>
+      <Prop name="OddColor" value="14737632"/>
+      <Prop name="CellPadding" value="15"/>
+      <Prop name="CellBorderSize" value="0"/>
+      <Prop name="CellBorderStyle" value="1"/>
+      <Prop name="CellBorderColor" value="-2147483643"/>
+      <Prop name="CellBorder" value="0"/>
+      <Prop name="DisplayType" value="0"/>
+      <Prop name="TabKeyBehavior" value="0"/>
+      <Prop name="EnterKeyBehavior" value="1"/>
+      <Prop name="Appearance" value="2"/>
+      <Prop name="Radix" value="10"/>
+      <Prop name="Format" value="General"/>
+      <Prop name="PictAlignment" value="3"/>
+      <Prop name="CustomDrawStage" value="0"/>
+      <Prop name="AlphaBorder" value="255"/>
+      <Prop name="AlphaBkg" value="255"/>
+      <Prop name="AlphaBkgPicture" value="255"/>
+      <Prop name="AlphaContent" value="255"/>
+      <Prop name="MousePointer" value="0"/>
+      <Prop name="BkgPictAlignment" value="9"/>
+      <Font>
+       <Prop name="Name" value="Tahoma"/>
+       <Prop name="Size" value="0;90000"/>
+       <Prop name="Bold" value="0"/>
+       <Prop name="Italic" value="0"/>
+       <Prop name="Underline" value="0"/>
+       <Prop name="Strikethrough" value="0"/>
+       <Prop name="Weight" value="400"/>
+       <Prop name="Charset" value="0"/>
+      </Font>
+     </StyleData>
+    </Style>
+    <Style name="PageFooter">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="0"/>
+      <Prop name="GridLineColor" value="-2147483640"/>
+      <Prop name="BkgStyle" value="0"/>
+      <Prop name="TextAlignment" value="2"/>
+      <Prop name="WordWrap" value="-1"/>
+      <Prop name="LineStyle" value="0"/>
+      <Prop name="Appearance" value="0"/>
+     </StyleData>
+    </Style>
+    <Style name="PageHeader">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="65793"/>
+      <Prop name="GridLineColor" value="-2147483640"/>
+      <Prop name="BkgStyle" value="0"/>
+      <Prop name="TextAlignment" value="2"/>
+      <Prop name="WordWrap" value="-1"/>
+      <Prop name="LineStyle" value="0"/>
+      <Prop name="Appearance" value="0"/>
+     </StyleData>
+    </Style>
+    <Style name="PreviewPane">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="LineStyle" value="0"/>
+     </StyleData>
+    </Style>
+    <Style name="Selection">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483634"/>
+      <Prop name="BackColor" value="-2147483635"/>
+     </StyleData>
+    </Style>
+    <Style name="Tip">
+     <StyleData>
+      <Prop name="BasedOn" value="Normal"/>
+      <Prop name="ForeColor" value="-2147483625"/>
+      <Prop name="BackColor" value="-2147483624"/>
+      <Prop name="BkgStyle" value="1"/>
+      <Prop name="TextAlignment" value="4"/>
+      <Prop name="LineStyle" value="0"/>
+      <Prop name="CellPadding" value="18"/>
+      <Prop name="CellBorderSize" value="0"/>
+      <Prop name="CellBorderStyle" value="1"/>
+      <Prop name="CellBorderColor" value="-2147483625"/>
+      <Prop name="CellBorder" value="0"/>
+      <Prop name="Appearance" value="1"/>
+      <Prop name="Format" value=""/>
+      <Prop name="AlphaBorder" value="255"/>
+      <Prop name="AlphaBkg" value="255"/>
+      <Prop name="AlphaBkgPicture" value="255"/>
+      <Prop name="AlphaContent" value="255"/>
+     </StyleData>
+    </Style>
+   </Styles>
+   <CellStyleConditions/>
+   <CellStyleConditions/>
+   <ValueItemsCollection>
+    <ValueItems key="Field0">
+     <ValueItemsData translate="1" limit="0" default="-1" cycle="0"/>
+    </ValueItems>
+   </ValueItemsCollection>
+  </Layout>
+ </Layouts>
+</SharpGridLayout>
