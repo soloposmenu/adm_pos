@@ -1,0 +1,262 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+[Package|Standard Setup Package 1|ADMIN Solosoftware]
+Icon1=Adm_Pos.exe
+Title1=ADMIN
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\Installs 2015\Administracion
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\ARVIEW2.OCX=
+C:\Archivos de programa\SwiftPrint\swiftprint.ocx=
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\exclexpt.dll=
+D:\SoloSoftware\Sys_Pos\Cierre.exe=
+D:\SoloSoftware\Sys_Pos\RepeatZ.exe=
+C:\Archivos de programa\SOLOVISTA\sg20o.ocx=
+D:\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=
+C:\Program Files\SwiftPrint\swiftprint.ocx=
+C:\Program Files\Common Files\Data Dynamics\ActiveReports 2\exclexpt.dll=
+C:\Windows\System32\ARVIEW2.OCX=
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Cierre.exe=
+E:\11JUN2013\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\SG20O.OCX=
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\sg20u.ocx=
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\sg20ou.ocx=
+C:\WINDOWS\system32\msstdfmt.dll=
+C:\Program Files\Common Files\Data Dynamics\SharpGrid\sg20o.ocx=
+
+[Package|Standard Setup Package 1|Files Added]
+c:\archivos de programa\archivos comunes\data dynamics\sharpgrid\sg20u.ocx=
+c:\archivos de programa\archivos comunes\data dynamics\sharpgrid\sg20ou.ocx=
+c:\archivos de programa\archivos comunes\data dynamics\sharpgrid\exclexpt.dll=
+d:\solosoftware\sys_pos\cierre.exe=
+d:\solosoftware\sys_pos\repeatz.exe=
+d:\solosoftware\sys_pos\soloini.ini=
+d:\solosoftware\sys_pos\inoutlog.txt=
+d:\solosoftware\sys_pos\ventalog.txt=
+d:\solosoftware\sys_pos\solofile.txt=
+d:\solosoftware\sys_pos\solohelp.hlp=
+d:\solosoftware\miscelaneos\dbmaintenance\dbmaintenance.exe=
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\SoloIni.ini=
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Cierre.exe=
+E:\11JUN2013\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\archivos de programa\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+c:\windows\system\expsrv.dll=
+d:\archivos de programa\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+c:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\sg20u.ocx=Yes
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\sg20ou.ocx=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\msstdfmt.dll=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\MSHFLXGD.OCX=Yes
+C:\WINDOWS\system32\Mscomctl.ocx=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\WINDOWS\system32\MSCHRT20.OCX=Yes
+C:\WINDOWS\system32\Mscomct2.ocx=Yes
+C:\WINDOWS\system32\msjet40.dll=Yes
+C:\WINDOWS\system32\msjter40.dll=Yes
+C:\WINDOWS\system32\msjint40.dll=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\mswstr10.dll=Yes
+C:\WINDOWS\system32\mswdat10.dll=Yes
+C:\WINDOWS\system32\msrd2x40.dll=Yes
+C:\WINDOWS\system32\msrd3x40.dll=Yes
+C:\WINDOWS\system32\msrepl40.dll=Yes
+C:\WINDOWS\system32\msjtes40.dll=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Adm_Pos.exe=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\System\ado\msadox.dll=Yes
+C:\Program Files\Common Files\microsoft shared\DAO\dao360.dll=Yes
+C:\Windows\System32\ARVIEW2.OCX=Yes
+C:\Program Files\Common Files\Data Dynamics\ActiveReports 2\exclexpt.dll=Yes
+C:\Program Files\SwiftPrint\swiftprint.ocx=Yes
+C:\Program Files\Common Files\Data Dynamics\SharpGrid\sg20o.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\SoloIni.ini=Yes
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Cierre.exe=Yes
+E:\11JUN2013\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+D:\SoloSoftware\Sys_Pos\Adm_Pos.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msadox.dll=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\Mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCHRT20.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\Mscomct2.ocx=$(WinSysPath)
+C:\Archivos de programa\SwiftPrint\swiftprint.ocx=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\SG20O.OCX=$(WinSysPath)
+C:\Program files\Common files\Microsoft shared\dao\dao360.dll=$(MSDAOPath)
+C:\WINDOWS\SYSTEM\msjet40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msjter40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msjint40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSWSTR10.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\mswdat10.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msrd2x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msrd3x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msrepl40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msjtes40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB5DB.DLL=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\ARVIEW2.OCX=$(WinSysPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\sg20u.ocx=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\sg20ou.ocx=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\Data Dynamics\SharpGrid\exclexpt.dll=$(WinSysPath)
+D:\SoloSoftware\Sys_Pos\Cierre.exe=$(AppPath)
+D:\SoloSoftware\Sys_Pos\RepeatZ.exe=$(AppPath)
+D:\SoloSoftware\Sys_Pos\SoloIni.ini=$(AppPath)
+D:\SoloSoftware\Sys_Pos\INOUTLOG.TXT=$(AppPath)
+D:\SoloSoftware\Sys_Pos\VENTALOG.TXT=$(AppPath)
+D:\SoloSoftware\Sys_Pos\SOLOFILE.TXT=$(AppPath)
+D:\SoloSoftware\Sys_Pos\SOLOHELP.HLP=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msadox.dll=$(WinSysPath)
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\msstdfmt.dll=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\Mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCHRT20.OCX=$(WinSysPath)
+C:\WINDOWS\system32\Mscomct2.ocx=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\Microsoft Shared\DAO\dao360.dll=$(MSDAOPath)
+C:\WINDOWS\system32\msjet40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjter40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjint40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mswstr10.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mswdat10.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd2x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd3x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrepl40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjtes40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Archivos de programa\SOLOVISTA\sg20o.ocx=$(WinSysPath)
+D:\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=$(AppPath)
+C:\Archivos de programa\Adm_Pos\sg20o.ocx=$(WinSysPath)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Adm_Pos.exe=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\System\ado\msadox.dll=$(WinSysPath)
+C:\Windows\System32\ARVIEW2.OCX=$(WinSysPath)
+C:\Program Files\Common Files\Data Dynamics\ActiveReports 2\exclexpt.dll=$(WinSysPath)
+C:\Program Files\SwiftPrint\swiftprint.ocx=$(WinSysPath)
+C:\Program Files\Common Files\Data Dynamics\SharpGrid\sg20o.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\SoloIni.ini=$(AppPath)
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Cierre.exe=$(AppPath)
+E:\11JUN2013\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+D:\SoloSoftware\Sys_Pos\Adm_Pos.exe=No
+D:\SoloSoftware\Sys_Pos\Cierre.exe=No
+D:\SoloSoftware\Sys_Pos\RepeatZ.exe=No
+D:\SoloSoftware\Sys_Pos\SoloIni.ini=No
+D:\SoloSoftware\Sys_Pos\INOUTLOG.TXT=No
+D:\SoloSoftware\Sys_Pos\VENTALOG.TXT=No
+D:\SoloSoftware\Sys_Pos\SOLOFILE.TXT=No
+D:\SoloSoftware\Sys_Pos\SOLOHELP.HLP=No
+D:\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=No
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Adm_Pos.exe=No
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\SoloIni.ini=No
+E:\11JUN2013\SOLOSOFTWARE\Sys_Pos\Cierre.exe=No
+E:\11JUN2013\SOLOSOFTWARE\Miscelaneos\DBMaintenance\DBMaintenance.exe=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=ADMIN Solosoftware 8.6
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Solo Software
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|Solo Software]
+Icon1=Adm_Pos.exe
+Title1=ADMIN
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=E:\Installs 2015\Administracion
+ProjectFolder=E:\11JUN2013\SOLOSOFTWARE\Sys_Pos
+ServerSideCab=
+File1=E:\Installs 2015\Administracion\setup.exe
+File2=E:\Installs 2015\Administracion\Setup.Lst
+File3=E:\Installs 2015\Administracion\Adm_Pos.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
