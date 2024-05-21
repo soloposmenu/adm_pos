@@ -1,0 +1,15 @@
+
+---------- PLU.FRM
+    cCaja & "," & npNumCaj & "," & nMesa & "," & nMesero & "," & -1 & "," & CajLin & ",'" & _
+    "" & cCaja & "," & npNumCaj & "," & nMesa & "," & nMesero & "," & -1 & "," & CajLin & "," & _
+    "" & cCaja & "," & npNumCaj & "," & nMesa & "," & nMesero & "," & -1 & "," & nMaxLin + 1 & "," & _
+            If nMesa = 0 Or nMesero = 0 Then
+    nMesero & "," & _
+        nMesero = 1
+        rs05.Find "numero = " & nMesero
+    nMesero = rs07!mesero
+    rs05.Find "numero = " & nMesero
+Do Until nMesero > 0
+        "" & cCaja & "," & npNumCaj & "," & nMesa & "," & nMesero & "," & -1 & "," & CajLin & "," & "'" & _
+        "" & cCaja & "," & npNumCaj & "," & nMesa & "," & nMesero & "," & -1 & "," & CajLin & "," & "'" & _
+    "" & cCaja & "," & npNumCaj & "," & nMesa & "," & nMesero & "," & -1 & "," & CajLin & "," & "'EC-" & _
