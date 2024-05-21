@@ -1,0 +1,59 @@
+AdmAcom
+AdmAcoPlu
+AdmApND
+AdmCajero
+AdmCli
+AdmCompras
+AdmDep
+AdmDepInv
+AdmDepOp
+AdmDevCompras
+AdmDevoluciones
+AdmEnv
+AdmGrp
+AdmInv
+AdmMain
+AdmMesas
+AdmMesero
+AdmOrg
+AdmPagCli
+AdmPagProv
+AdmPlu
+AdmPLU_Invent
+AdmProv
+AdmProvND
+AdmRecetas
+AdmTransferencia
+AdmUnid
+AdmUnidCons
+AdmUsers
+AjusteInv
+ConCaj
+conCompraDept
+conCompras
+conCosto
+ConDept
+conDomi
+ConGrpVta
+conHistorico
+conInv
+ConMes
+conPlu
+conTrans
+conVtaWeek
+Desbloquear
+lstPagos
+MenuOrd
+NCProveedor
+PrintCta
+ScreenReport
+Sys_Adm
+TomaInventario
+TransferenciaRECETAS
+..\SoloMix\habibis\Mensaje
+Module=Domicilio; ..\SoloMix\Domicilio\Domicilio.bas
+Class=CPrintTvw; classes\CPrintTvw.cls
+Module=SoloRept; SoloRept.bas
+Module=SoloFun1; SoloFun1.bas
+Module=Modulo00; Modulo00.bas
+Module=Modulo01; Modulo01.bas

@@ -1,0 +1,581 @@
+[Root]
+Most Recent Package=Sistema de Administracion
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\ADMIN
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+D:\PruebasVB\PRUEBADE.OCX=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+D:\DOWNLOAD\Mdac_typxes.exe=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\SYS_POS\Adm_Pos.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Archivos de programa\Archivos comunes\designer\MSDERUN.DLL=Yes
+C:\WINDOWS\SYSTEM\MSBIND.DLL=Yes
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=Yes
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=Yes
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=Yes
+C:\WINDOWS\SYSTEM\MSADODC.OCX=Yes
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCHRT20.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=Yes
+D:\PruebasVB\PRUEBADE.OCX=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\DOWNLOAD\Mdac_typxes.exe=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\SYS_POS\Adm_Pos.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCHRT20.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=$(WinSysPath)
+D:\PruebasVB\PRUEBADE.OCX=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\DOWNLOAD\Mdac_typxes.exe=$(CommonFiles)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\SYS_POS\Adm_Pos.exe=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=SOLO ADMIN
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=SOLO ADMIN
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|SOLO ADMIN]
+Icon1=Adm_Pos.exe
+Title1=SOLO ADMIN
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\ADMIN
+ProjectFolder=C:\SYS_POS
+ServerSideCab=
+File1=C:\ADMIN\setup.exe
+File2=C:\ADMIN\Setup.Lst
+File3=C:\ADMIN\Adm_Pos.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Paquete de Administracion|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\ADMIN
+
+[Package|Paquete de Administracion|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Paquete de Administracion|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Paquete de Administracion|Files Found]
+Mdac_typ_es.exe=C:\MDAC\Mdac_typ_es.exe
+Mdac_typxes.exe=C:\MDAC\Mdac_typxes.exe
+
+[Package|Paquete de Administracion|Files Released]
+
+[Package|Paquete de Administracion|Missing Dependency Information]
+D:\PruebasVB\PRUEBADE.OCX=
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=
+C:\Downloads\mdac_typ_es.exe=
+C:\MDAC\mdac_typ_es.exe=
+
+[Package|Paquete de Administracion|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\CRYSTL32.OCX=
+
+[Package|Paquete de Administracion|Files Added]
+mdac_typxes.exe=
+mdac_typ_es.exe=
+c:\sys_pos\rep\rpt01.rpt=
+c:\sys_pos\rep\rpt02.rpt=
+C:\SYS_POS\REP\rpt03.rpt=
+C:\SYS_POS\REP\rpt04.rpt=
+C:\SYS_POS\REP\rpt05.rpt=
+C:\SYS_POS\REP\rpt06.rpt=
+
+[Package|Paquete de Administracion|Files Removed]
+d:\download\mdac_typxes.exe=
+c:\mdac\mdac_typ_es.exe=
+c:\mdac\mdac_typxes.exe=
+c:\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+
+[Package|Paquete de Administracion|Files In Project]
+C:\SYS_POS\Adm_Pos.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Archivos de programa\Archivos comunes\designer\MSDERUN.DLL=Yes
+C:\WINDOWS\SYSTEM\MSBIND.DLL=Yes
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=Yes
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=Yes
+C:\WINDOWS\SYSTEM\MSADODC.OCX=Yes
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCHRT20.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=Yes
+D:\PruebasVB\PRUEBADE.OCX=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=Yes
+C:\MDAC\Mdac_typxes.exe=Yes
+C:\MDAC\mdac_typ_es.exe=Yes
+C:\WINDOWS\SYSTEM\CRYSTL32.OCX=Yes
+C:\WINDOWS\SYSTEM\CRPE32.DLL=Yes
+C:\WINDOWS\SYSTEM\IMPLODE.DLL=Yes
+C:\WINDOWS\SYSTEM\PG32.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\CO2C40EN.DLL=Yes
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT20.DLL=Yes
+C:\WINDOWS\SYSTEM\crxlat32.dll=Yes
+C:\WINDOWS\SYSTEM\P2BBND.DLL=Yes
+C:\WINDOWS\SYSTEM\P2BDAO.DLL=Yes
+C:\WINDOWS\SYSTEM\P2CTDAO.DLL=Yes
+C:\WINDOWS\SYSTEM\P2IRDAO.DLL=Yes
+C:\WINDOWS\SYSTEM\P2SODBC.DLL=Yes
+C:\WINDOWS\SYSTEM\U2DDISK.DLL=Yes
+C:\WINDOWS\Crystal\U2DMAPI.DLL=Yes
+C:\WINDOWS\Crystal\U2FCR.DLL=Yes
+C:\WINDOWS\Crystal\U2FDIF.DLL=Yes
+C:\WINDOWS\Crystal\U2FHTML.DLL=Yes
+C:\WINDOWS\Crystal\U2FREC.DLL=Yes
+C:\WINDOWS\Crystal\U2FRTF.DLL=Yes
+C:\WINDOWS\Crystal\U2FSEPV.DLL=Yes
+C:\WINDOWS\Crystal\U2FTEXT.DLL=Yes
+C:\WINDOWS\Crystal\U2FWKS.DLL=Yes
+C:\WINDOWS\Crystal\U2FWORDW.DLL=Yes
+C:\WINDOWS\Crystal\U2FXLS.DLL=Yes
+C:\SYS_POS\REP\rpt01.rpt=Yes
+C:\SYS_POS\REP\rpt02.rpt=Yes
+C:\SYS_POS\REP\rpt03.rpt=Yes
+C:\SYS_POS\REP\rpt04.rpt=Yes
+C:\SYS_POS\REP\rpt05.rpt=Yes
+C:\SYS_POS\REP\rpt06.rpt=Yes
+
+[Package|Paquete de Administracion|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de Administracion|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de Administracion|Install Locations]
+C:\SYS_POS\Adm_Pos.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCHRT20.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=$(WinSysPath)
+D:\PruebasVB\PRUEBADE.OCX=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\DOWNLOAD\Mdac_typxes.exe=$(CommonFiles)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=$(WinSysPath)
+C:\Downloads\mdac_typ_es.exe=$(AppPath)
+C:\MDAC\Mdac_typxes.exe=$(AppPath)
+C:\MDAC\mdac_typ_es.exe=$(AppPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\CRYSTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\CRPE32.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\IMPLODE.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\PG32.DLL=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\CO2C40EN.DLL=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT20.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\crxlat32.dll=$(WinPath)\Crystal
+C:\WINDOWS\SYSTEM\P2BBND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2BDAO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2CTDAO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2IRDAO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2SODBC.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\U2DDISK.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2DMAPI.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FCR.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FDIF.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FHTML.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FREC.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FRTF.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FSEPV.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FTEXT.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FWKS.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FWORDW.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FXLS.DLL=$(WinPath)\Crystal
+C:\SYS_POS\REP\rpt01.rpt=$(AppPath)\Rep
+C:\SYS_POS\REP\rpt02.rpt=$(AppPath)\Rep
+C:\SYS_POS\REP\rpt03.rpt=$(AppPath)
+C:\SYS_POS\REP\rpt04.rpt=$(AppPath)
+C:\SYS_POS\REP\rpt05.rpt=$(AppPath)
+C:\SYS_POS\REP\rpt06.rpt=$(AppPath)
+
+[Package|Paquete de Administracion|Configure Shared Files]
+Applicable=Yes
+C:\SYS_POS\Adm_Pos.exe=No
+C:\Downloads\mdac_typ_es.exe=No
+C:\MDAC\Mdac_typxes.exe=No
+C:\MDAC\mdac_typ_es.exe=No
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\SYS_POS\REP\rpt01.rpt=No
+C:\SYS_POS\REP\rpt02.rpt=No
+C:\SYS_POS\REP\rpt03.rpt=No
+C:\SYS_POS\REP\rpt04.rpt=No
+C:\SYS_POS\REP\rpt05.rpt=No
+C:\SYS_POS\REP\rpt06.rpt=No
+
+[Package|Paquete de Administracion|Distribution]
+Type=single
+Size=
+Title=SOLO ADMIN
+
+[Package|Paquete de Administracion|Package]
+PackageFolder=C:\ADMIN
+ProjectFolder=C:\SYS_POS
+ServerSideCab=
+File1=C:\ADMIN\setup.exe
+File2=C:\ADMIN\Setup.Lst
+File3=C:\ADMIN\Adm_Pos.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Sistema de Administracion|Administracion]
+Icon1=Adm_Pos.exe
+Title1=SOLO Administracion
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Sistema de Administracion|SOLO ADMIN]
+Icon1=Adm_Pos.exe
+Title1=SOLO ADMIN
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Sistema de Administracion|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\SoloSoft\Installs\SoloAdmin
+
+[Package|Sistema de Administracion|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Sistema de Administracion|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Sistema de Administracion|Files Found]
+
+[Package|Sistema de Administracion|Files Released]
+Mdac_typ_es.exe=
+Mdac_typxes.exe=
+
+[Package|Sistema de Administracion|Missing Dependency Information]
+D:\PruebasVB\PRUEBADE.OCX=
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=
+C:\Downloads\mdac_typ_es.exe=
+C:\MDAC\mdac_typ_es.exe=
+C:\MDAC\Mdac_typxes.exe=
+C:\WINDOWS\SYSTEM\CRYSTL32.OCX=
+C:\WINDOWS\SYSTEM\PRUEBADE.OCX=
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msadox.dll=
+C:\Archivos de programa\SwiftPrint\swiftprint.ocx=
+C:\Sys_Pos\Cierre.exe=
+C:\Sys_Pos\ClearData.exe=
+C:\Sys_Pos\RepeatZ.exe=
+C:\WINSOLO\SYSTEM\swiftprint.ocx=
+C:\WINSOLO\SYSTEM\msadox.dll=
+
+[Package|Sistema de Administracion|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\CRYSTL32.OCX=
+
+[Package|Sistema de Administracion|Files Added]
+c:\sys_pos\rep\rpt01.rpt=
+c:\sys_pos\rep\rpt02.rpt=
+c:\sys_pos\rep\rpt03.rpt=
+c:\sys_pos\rep\rpt04.rpt=
+c:\sys_pos\rep\rpt05.rpt=
+c:\sys_pos\rep\rpt06.rpt=
+c:\sys_pos\cierre.exe=
+c:\sys_pos\cleardata.exe=
+c:\sys_pos\repeatz.exe=
+c:\sys_pos\soloini.ini=
+c:\sys_pos\ventalog.txt=
+c:\sys_pos\inoutlog.txt=
+C:\SoloSoft\Otros\geo885n.ttf=
+
+[Package|Sistema de Administracion|Files Removed]
+d:\download\mdac_typxes.exe=
+c:\mdac\mdac_typ_es.exe=
+c:\mdac\mdac_typxes.exe=
+c:\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+c:\archivos de programa\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+c:\sys_pos\rep\rpt01.rpt=
+c:\sys_pos\rep\rpt02.rpt=
+c:\sys_pos\rep\rpt03.rpt=
+c:\sys_pos\rep\rpt04.rpt=
+c:\sys_pos\rep\rpt05.rpt=
+c:\sys_pos\rep\rpt06.rpt=
+
+[Package|Sistema de Administracion|Files In Project]
+C:\SYS_POS\Adm_Pos.exe=Yes
+C:\SYS_POS\REP\rpt01.rpt=No
+C:\SYS_POS\REP\rpt02.rpt=No
+C:\SYS_POS\REP\rpt03.rpt=No
+C:\SYS_POS\REP\rpt04.rpt=No
+C:\SYS_POS\REP\rpt05.rpt=No
+C:\SYS_POS\REP\rpt06.rpt=No
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Sys_Pos\Cierre.exe=Yes
+C:\Sys_Pos\ClearData.exe=Yes
+C:\Sys_Pos\RepeatZ.exe=Yes
+C:\Sys_Pos\SoloIni.ini=Yes
+C:\Sys_Pos\VENTALOG.TXT=Yes
+C:\Sys_Pos\INOUTLOG.TXT=Yes
+C:\WINSOLO\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINSOLO\SYSTEM\MSBIND.DLL=Yes
+C:\WINSOLO\SYSTEM\MSSTDFMT.DLL=Yes
+C:\WINSOLO\SYSTEM\MSADODC.OCX=Yes
+C:\WINSOLO\SYSTEM\MSHFLXGD.OCX=Yes
+C:\WINSOLO\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINSOLO\SYSTEM\MSDATGRD.OCX=Yes
+C:\WINSOLO\SYSTEM\MSCHRT20.OCX=Yes
+C:\WINSOLO\SYSTEM\MSCOMCT2.OCX=Yes
+C:\WINSOLO\SYSTEM\VB6STKIT.DLL=Yes
+C:\WINSOLO\SYSTEM\msadox.dll=Yes
+C:\WINSOLO\SYSTEM\swiftprint.ocx=Yes
+C:\SoloSoft\Otros\geo885n.ttf=Yes
+
+[Package|Sistema de Administracion|Configure Registry Files]
+Applicable=No
+
+[Package|Sistema de Administracion|Configure Remote Servers]
+Applicable=No
+
+[Package|Sistema de Administracion|Install Locations]
+C:\SYS_POS\Adm_Pos.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDBRPTR.DLL=$(WinSysPath)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\MSADOX.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCHRT20.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=$(WinSysPath)
+D:\PruebasVB\PRUEBADE.OCX=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\DOWNLOAD\Mdac_typxes.exe=$(CommonFiles)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Archivos de programa\Archivos comunes\SYSTEM\ADO\msado21.tlb=$(WinSysPath)
+C:\Downloads\mdac_typ_es.exe=$(AppPath)
+C:\MDAC\Mdac_typxes.exe=$(AppPath)
+C:\MDAC\mdac_typ_es.exe=$(AppPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\CRYSTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\CRPE32.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\IMPLODE.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\PG32.DLL=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\CO2C40EN.DLL=$(WinSysPath)
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT20.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\crxlat32.dll=$(WinPath)\Crystal
+C:\WINDOWS\SYSTEM\P2BBND.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2BDAO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2CTDAO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2IRDAO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\P2SODBC.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\U2DDISK.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2DMAPI.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FCR.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FDIF.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FHTML.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FREC.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FRTF.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FSEPV.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FTEXT.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FWKS.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FWORDW.DLL=$(WinPath)\Crystal
+C:\WINDOWS\Crystal\U2FXLS.DLL=$(WinPath)\Crystal
+C:\SYS_POS\REP\rpt01.rpt=$(AppPath)\Rep
+C:\SYS_POS\REP\rpt02.rpt=$(AppPath)\Rep
+C:\SYS_POS\REP\rpt03.rpt=$(AppPath)\Rep
+C:\SYS_POS\REP\rpt04.rpt=$(AppPath)\Rep
+C:\SYS_POS\REP\rpt05.rpt=$(AppPath)\Rep
+C:\SYS_POS\REP\rpt06.rpt=$(AppPath)\Rep
+C:\WINDOWS\SYSTEM\PRUEBADE.OCX=$(WinSysPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\SwiftPrint\swiftprint.ocx=$(WinSysPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Sys_Pos\Cierre.exe=$(AppPath)
+C:\Sys_Pos\ClearData.exe=$(AppPath)
+C:\Sys_Pos\RepeatZ.exe=$(AppPath)
+C:\Sys_Pos\SoloIni.ini=$(AppPath)
+C:\Sys_Pos\VENTALOG.TXT=$(AppPath)
+C:\Sys_Pos\INOUTLOG.TXT=$(AppPath)
+C:\WINSOLO\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINSOLO\SYSTEM\MSBIND.DLL=$(WinSysPath)
+C:\WINSOLO\SYSTEM\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINSOLO\SYSTEM\MSADODC.OCX=$(WinSysPath)
+C:\WINSOLO\SYSTEM\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINSOLO\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINSOLO\SYSTEM\MSDATGRD.OCX=$(WinSysPath)
+C:\WINSOLO\SYSTEM\MSCHRT20.OCX=$(WinSysPath)
+C:\WINSOLO\SYSTEM\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINSOLO\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\WINSOLO\SYSTEM\msadox.dll=$(WinSysPath)
+C:\WINSOLO\SYSTEM\swiftprint.ocx=$(WinSysPath)
+C:\SoloSoft\Otros\geo885n.ttf=$(Font)
+
+[Package|Sistema de Administracion|Configure Shared Files]
+Applicable=Yes
+C:\SYS_POS\Adm_Pos.exe=No
+C:\Downloads\mdac_typ_es.exe=No
+C:\MDAC\Mdac_typxes.exe=No
+C:\MDAC\mdac_typ_es.exe=No
+C:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\SYS_POS\REP\rpt01.rpt=No
+C:\SYS_POS\REP\rpt02.rpt=No
+C:\SYS_POS\REP\rpt03.rpt=No
+C:\SYS_POS\REP\rpt04.rpt=No
+C:\SYS_POS\REP\rpt05.rpt=No
+C:\SYS_POS\REP\rpt06.rpt=No
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Sys_Pos\Cierre.exe=No
+C:\Sys_Pos\ClearData.exe=No
+C:\Sys_Pos\RepeatZ.exe=No
+C:\Sys_Pos\SoloIni.ini=Yes
+C:\Sys_Pos\VENTALOG.TXT=No
+C:\Sys_Pos\INOUTLOG.TXT=No
+
+[Package|Sistema de Administracion|Distribution]
+Type=single
+Size=
+Title=SOLO Administration
+
+[Package|Sistema de Administracion|Package]
+PackageFolder=C:\SoloSoft\Installs\SoloAdmin
+ProjectFolder=C:\Sys_Pos
+ServerSideCab=
+File1=C:\SoloSoft\Installs\SoloAdmin\setup.exe
+File2=C:\SoloSoft\Installs\SoloAdmin\Setup.Lst
+File3=C:\SoloSoft\Installs\SoloAdmin\Adm_Pos.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Sistema de Administracion|IconGroups]
+Group0=SoloSoftware
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Sistema de Administracion|SoloSoftware]
+Icon1=Adm_Pos.exe
+Title1=ADMIN
+StartIn1=$(AppPath)
+Key1=Icon1
