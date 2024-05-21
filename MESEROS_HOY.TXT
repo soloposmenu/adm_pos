@@ -1,0 +1,10 @@
+16/08/2022---00:52
+
+VENTAS x MESEROS (HOY)
+
+NOMBRE                TRANS     VENTAS
+======================================
+ROSANA (APELLIDO)       9       728.50
+DARLINE (APELLIDO)      3        44.00
+YARIBETH (APELLIDO)     1         3.50
+======================================

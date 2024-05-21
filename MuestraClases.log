@@ -1,0 +1,16 @@
+Line 12: Class Project1.uctClassClientesDataGrid of control uctClassClientesDataGrid1 was not a loaded control class.
+Line 24: Class Project1.uctclsUnidMedidaComboBox of control uctclsUnidMedidaComboBox1 was not a loaded control class.
+Line 35: Class Project1.uctClassDepInvComboBox of control uctClassDepInvComboBox1 was not a loaded control class.
+Line 18: The property name _ExtentX in uctClassClientesDataGrid1 is invalid.
+Line 19: The property name _ExtentY in uctClassClientesDataGrid1 is invalid.
+Line 20: The property name ManualInitialize in uctClassClientesDataGrid1 is invalid.
+Line 21: The property name GridEditable in uctClassClientesDataGrid1 is invalid.
+Line 22: The property name SaveMode in uctClassClientesDataGrid1 is invalid.
+Line 30: The property name _ExtentX in uctclsUnidMedidaComboBox1 is invalid.
+Line 31: The property name _ExtentY in uctclsUnidMedidaComboBox1 is invalid.
+Line 32: The property name ManualInitialize in uctclsUnidMedidaComboBox1 is invalid.
+Line 33: The property name NoneFirst in uctclsUnidMedidaComboBox1 is invalid.
+Line 41: The property name _ExtentX in uctClassDepInvComboBox1 is invalid.
+Line 42: The property name _ExtentY in uctClassDepInvComboBox1 is invalid.
+Line 43: The property name ManualInitialize in uctClassDepInvComboBox1 is invalid.
+Line 44: The property name NoneFirst in uctClassDepInvComboBox1 is invalid.

@@ -1,0 +1,288 @@
+---------- SYS_POS.FRM
+MsgBox "TRABAJANDO OFF-LINE (Fuera de Linea). Puede Continuar. Presione Enter", vbInformation, BoxTit
+MsgBox "ON LINE ¡ ERROR AL COPIAR BASES DE DATOS ! POSIBLEMENTE " & _
+MsgBox OBJERR.Number & " <-> " & OBJERR.Description, vbCritical, "Error Grave. ANOTE EL NUMERO"
+MsgBox "Informacion es INCORRECTA, Intente de Nuevo", vbInformation, BoxTit
+MsgBox "POR FAVOR ENCIENDA LA IMPRESORA", vbInformation, BoxTit
+MsgBox sError, vbCritical, "Error Grave. ANOTE EL NUMERO"
+MsgBox "¡ Favor utilize el boton Salir !", vbExclamation, BoxTit
+---------- PLU.FRM
+MsgBox "NO HAY PLATOS EN LA MESA. PRE-CUENTA NO SE IMPRIMIRA", vbInformation, BoxTit
+MsgBox " No hay nada Marcado ", vbExclamation, BoxTit
+MsgBox "Por Favor SELECCIONE un Producto", vbInformation, BoxTit
+MsgBox "NO puede dar DESCUENTO a este Producto", vbInformation, BoxTit
+MsgBox "NO puede dar DESCUENTO a un Descuento", vbExclamation, BoxTit
+MsgBox "PRODUCTO YA FUE ANULADO/CORREGIDO/SE DIO DESCUENTO EN LA LINEA " & Val(Mid(rsFixTmpTrans!TIPO, 5, 2)), vbInformation, BoxTit
+MsgBox "EL CAJERO NO TIENE VENTAS, NO SE IMPRIMIRA REPORTE EN X", vbInformation, BoxTit
+MsgBox "DEPARTAMENTO ABIERTO", vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+MsgBox "NO HAY ARTICULOS PENDIENTES PARA ENVIAR A LA COCINA o LA BARRA", vbInformation, BoxTit
+        BoxResp = MsgBox(BoxPreg, vbInformation, BoxTit)
+        BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+        BoxResp = MsgBox(BoxPreg, vbInformation, BoxTit)
+MsgBox "Por Favor Seleccione ENVASE", vbInformation, BoxTit
+MsgBox "Por Favor Seleccione ENVASE", vbInformation, BoxTit
+MsgBox "CANTIDAD/MONTO NO ES VALIDO, ESTABLECIENDO UNO (1)", vbExclamation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbInformation, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+MsgBox "NO EXISTEN DEPARTAMENTOS. ES NECESARIO CREAR DEPARTAMENTOS DE VENTAS. EL PROGRAMA TERMINARA AHORA", vbCritical, BoxTit
+MsgBox "NO EXISTEN MESEROS/SALONEROS. ES NECESARIO CREARLOS. EL PROGRAMA TERMINARA AHORA", vbCritical, BoxTit
+If PlatosMesa.Rows = 0 Then MsgBox "¡ DEBE MARCAR UN PLATO !", vbExclamation, BoxTit: Exit Sub
+---------- SYS_ADM.FRM
+MsgBox "INFORMACION INCORRECTA, INTENTE DE NUEVO", vbExclamation, BoxTit
+---------- ADMMAIN.FRM
+MsgBox "En Periodo de Prueba", vbInformation, BoxTit
+MsgBox "IMPOSIBLE CONTINUAR. PROGRAMA TERMINARA AHORA", vbCritical, BoxTit
+MsgBox "Error Abriendo Tablas de la Base de Datos, tal vez pueda continuar", vbInformation, BoxTit
+---------- ADMPLU.FRM
+     	BoxResp = MsgBox("¿ Desea Imprimir TODOS los Productos de Venta ?", vbQuestion + vbYesNo, BoxTit)
+MsgBox "¡ Ocurre algún Error con la Impresora, Intente Conectarla !", vbExclamation, BoxTit
+MsgBox "¡ El Producto no se puede Eliminar, tiene ventas !", vbExclamation, BoxTit
+MsgBox "¡¡ NO HAY SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox("¿ Desea Imprimir los Productos de Venta del Departamento Seleccionado ?", vbQuestion + vbYesNo, BoxTit)
+MsgBox "¡ Ocurre algún Error con la Impresora, Intente Conectarla !", vbExclamation, BoxTit
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation + vbOKOnly, BoxTit)
+BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+---------- DESCUE~1.FRM
+MsgBox "Data error event hit err:" & Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+---------- ADMDEP.FRM
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox("¿ Desea realizar el Reporte Departamental ?", vbQuestion + vbYesNo, BoxTit)
+MsgBox "¡ Ocurre algún Error con la Impresora, Intente Conectarla !", vbExclamation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation + vbOKOnly, BoxTit)
+
+---------- ADMENV.FRM
+MsgBox "El Envase no se puede Eliminar", vbExclamation + vbOKOnly, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation + vbOKOnly, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation + vbOKOnly, BoxTit)
+---------- PAGOS.FRM
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbInformation, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbInformation, BoxTit)
+MsgBox "NO puede cargar mas del SALDO DE LA CUENTA a esta tarjeta", vbExclamation, BoxTit
+
+---------- ADMORG.FRM
+MsgBox "EL NUMERO DE CUENTA ESPECIAL NO EXISTE, VERIFIQUE", vbExclamation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+---------- ADMAMD.FRM
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+---------- BORRALIN.FRM
+MsgBox "¡ Numero de Linea NO es VALIDO !", vbExclamation, BoxTit
+MsgBox "¡ El Producto ya fue ANULADO !", vbExclamation, BoxTit
+MsgBox "PRODUCTO YA FUE ANULADO/CORREGIDO/SE DIO DESCUENTO EN LA LINEA " & Val(Mid(rsFixTmpTrans!TIPO, 5, 2)), vbExclamation, BoxTit
+---------- ADMCAJ~1.FRM
+MsgBox "¡ El Cajero no se puede Eliminar, ya que tiene Ventas !", vbInformation, BoxTit
+MsgBox "¡¡ NO HAY SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "¡¡ Ya Existe Cajero con ese Número !!", vbExclamation, BoxTit
+MsgBox "¡¡ TIENE QUE ESCRIBIR UNA CONTRASEÑA PARA EL CAJERO !!", vbInformation, BoxTit
+---------- ADMMES~1.FRM
+MsgBox "¡ El Mesero no se puede Eliminar !", vbExclamation, BoxTit
+MsgBox "¡¡ NO HAY SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+---------- ADMMESAS.FRM
+    	BoxResp = MsgBox(BoxPreg, vbInformation + vbOKOnly, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbInformation + vbOKOnly, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbInformation + vbOKOnly, BoxTit)
+---------- ADMUSERS.FRM
+MsgBox "El Usuario no se puede Eliminar", vbInformation + vbOKOnly, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+---------- CAMBIA~1.FRM
+MsgBox "¡ NO ha seleccionado Mesa Ocupada !", vbExclamation, BoxTit
+---------- RPTCAJAS.FRM
+MsgBox "Hay un Error con los datos Departamentales", vbCritical, BoxTit
+MsgBox "NO EXISTEN TRANSACCIONES, NO SE IMPRIMIRA REPORTE", vbInformation, BoxTit
+MsgBox "NO EXISTEN TRANSACCIONES, NO SE IMPRIMIRA REPORTE", vbInformation, BoxTit
+MsgBox "error en depto", vbCritical, BoxTit
+MsgBox "REPORTE EN 'Z' DE TERMINAL ESTA LISTO", vbInformation, BoxTit
+MsgBox "HA OCURRIDO MAS DE UN ERROR EN EL REPORTE (Z). CONTACTE A SOLO SOFTWARE", vbCritical, BoxTit
+MsgBox "HA OCURRIDO UN ERROR.CONTACTE A SOLO SOFTWARE", vbCritical
+MsgBox "NO EXISTEN TRANSACCIONES, NO SE IMPRIMIRA REPORTE", vbInformation, BoxTit
+MsgBox "NO EXISTEN TRANSACCIONES, NO SE IMPRIMIRA REPORTE", vbInformation, BoxTit
+MsgBox "AUN NO ESTA DISPONIBLE", vbInformation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "AUN NO ESTA DISPONIBLE", vbInformation, BoxTit
+---------- ASKCLAVE.FRM
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+---------- ASKDESC.FRM
+    	BoxResp = MsgBox(BoxPreg, vbOKOnly, BoxTit)
+---------- PAGPAR~1.FRM
+MsgBox "¡¡ NO HAY NINGUN PAGO PARA APLICAR !!", vbExclamation, BoxTit
+MsgBox "¡¡ NO PUEDE APLICAR ESE DESCUENTO !!", vbExclamation, BoxTit
+MsgBox "¡¡ ES IMPOSIBLE APLICAR DESCUENTO GLOBAL !!", vbExclamation, BoxTit
+MsgBox "¡¡ ES IMPOSIBLE APLICAR ESTE DESCUENTO GLOBAL !!", vbExclamation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "USTED NO ESTA AUTORIZADO PARA HACER DESCUENTOS", vbExclamation, BoxTit
+MsgBox "NO HAY NADA MARCADO, FAVOR MARQUE PRODUCTOS", vbInformation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbInformation, BoxTit)
+---------- FACCTA~1.FRM
+MsgBox "¡¡ TIENE QUE ANOTAR EL NUMERO DE CUENTAS !!", vbExclamation, BoxTit
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "¡¡ NO SE PUEDEN CAMBIAR DESCUENTOS, CORRECCIONES, NI ANULACIONES !!", vbInformation, BoxTit
+---------- CTAPAGO.FRM
+MsgBox "¡¡ NO PUEDE APLICAR ESE DESCUENTO !!", vbInformation, BoxTit
+MsgBox "¡¡ ES IMPOSIBLE APLICAR DESCUENTO GLOBAL !!", vbInformation, BoxTit
+MsgBox "¡¡ ES IMPOSIBLE APLICAR ESTE DESCUENTO GLOBAL !!", vbInformation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "¡¡ USTED NO ESTA AUTORIZADO PARA HACER DESCUENTOS !!", vbInformation, BoxTit
+MsgBox "NO HAY NADA MARCADO, FAVOR MARQUE PRODUCTOS", vbInformation, BoxTit
+MsgBox "No puede cargar mas del SALDO A ESTA TARJETA", vbInformation, BoxTit
+---------- CONDEPT.FRM
+MsgBox "Error de Impresión (Papel o Conexión). " & Err.Description
+MsgBox "DEBE SELECCIONAR UN DEPARTAMENTO", vbInformation, BoxTit
+MsgBox "DEBE SELECCIONAR UN DEPARTAMENTO", vbInformation, BoxTit
+MsgBox "NO EXISTE INFORMACION PARA MOSTRAR. SELECCIONE OTRA(S) FECHA(S)", vbExclamation, BoxTit
+MsgBox "¡ Ocurre algún Error con la Impresora, Intente Conecterla !", vbExclamation, BoxTit
+---------- CONPLU.FRM
+MsgBox "Error de Impresión (Papel o Conexión). " & Err.Description
+MsgBox "DEBE SELECCIONAR UN PRODUCTO", vbInformation, BoxTit
+MsgBox "DEBE SELECCIONAR UN PRODUCTO", vbInformation, BoxTit
+MsgBox "¡ Ocurre algún Error con la Impresora, Intente Conecterla !", vbExclamation, BoxTit
+---------- ADMGRP.FRM
+MsgBox "El GRUPO NO se puede Eliminar", vbExclamation, BoxTit
+MsgBox "¡¡ NO HAY SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbInformation + vbOKOnly, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+---------- OPC01.FRM
+MsgBox "!! CLAVE NO ES VALIDA !!", vbExclamation, BoxTit
+---------- ADMPAG~1.FRM
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "EL DOCUMENTO HA SIDO APLICADO CON EXITO", vbInformation, BoxTit
+MsgBox "Ocurrio un Error en la Actualizacion, Intente de nuevo", vbExclamation, BoxTit
+MsgBox "NO HAY NADA QUE APLICAR", vbExclamation, BoxTit
+MsgBox "AUN PUEDE APLICAR EL SALDO A OTRA FACTURA", vbInformation, BoxTit
+    	ll = MsgBox("Una diferencia de " & Format(sDisponible, "currency") & _
+MsgBox "YA NO DISPONE DE MAS DINERO EN ESTE DOCUMENTO", vbExclamation, BoxTit
+MsgBox "DEBE REGRESAR FACTURAS EN ORDEN", vbInformation, BoxTit
+MsgBox "Debe ingresar un Monto en dinero", vbExclamation, BoxTit
+---------- ADMDEP~1.FRM
+MsgBox "El Departamento No se puede Eliminar", vbExclamation, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+---------- ADMUNID.FRM
+MsgBox "La unidad de Medida No se puede Eliminar", vbExclamation, BoxTit
+MsgBox sError, vbCritical, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbExclamation, BoxTit)
+MsgBox "La unidad debe ser un numero valido", vbInformation, BoxTit
+
+---------- ADMAPND.FRM
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "EL DOCUMENTO HA SIDO APLICADO CON EXITO", vbInformation, BoxTit
+MsgBox OBJERR.Description, vbCritical, BoxTit
+MsgBox "Ocurrio un ERROR en la ACTUALIZACION, Intente de nuevo", vbExclamation, BoxTit
+MsgBox "Debe ingresar un Monto en dinero", vbExclamation, BoxTit
+---------- ADMCLI.FRM
+MsgBox "¡¡ NO EXISTE SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+If Err.Description <> "" Then MsgBox Err.Description
+MsgBox OBJERR.Description, vbExclamation, BoxTit
+MsgBox "DEBE SELECCIONAR UNA OPCION", vbInformation, BoxTit
+	BoxResp = MsgBox("¿ Desea Imprimir " & opImp(ii).Caption & " ?", vbQuestion + vbYesNo, BoxTit)
+MsgBox "AUN NO ESTA DISPONIBLE"
+MsgBox "AUN NO ESTA DISPONIBLE"
+MsgBox "AUN NO ESTA DISPONIBLE"
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "El Limite de Crédito debe ser un valor en Moneda ", vbExclamation, BoxTit
+---------- ADMCLI~1.FRM
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+MsgBox Err.Description
+---------- ADMINV.FRM
+MsgBox "¡¡ NO HAY SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+If Err.Description <> "" Then MsgBox Err.Description
+MsgBox OBJERR.Description, vbCritical, BoxTit
+MsgBox OBJERR.Description, vbExclamation, BoxTit
+MsgBox OBJERR.Description, vbExclamation, BoxTit
+MsgBox OBJERR.Description, vbExclamation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "Verifique sus datos, existen letras en vez de numeros", vbExclamation, BoxTit
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+---------- ADMPROV.FRM
+MsgBox "¡¡ NO EXISTE SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+If Err.Description <> "" Then MsgBox Err.Description
+MsgBox OBJERR.Description, vbCritical, BoxTit
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+    	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "El Limite de Crédito debe ser un valor en Moneda ", vbExclamation, BoxTit
+---------- ADMINV2.FRM
+MsgBox "¡¡ NO HAY SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+If Err.Description <> "" Then MsgBox Err.Description
+MsgBox OBJERR.Description, vbExclamation, BoxTit
+MsgBox OBJERR.Description, vbExclamation, BoxTit
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox "Verifique sus datos, existen letras en vez de numeros", vbExclamation, BoxTit
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+MsgBox uctUnMedComboBox1.DameIDUnidad
+MsgBox ID
+
+---------- ADMCOM~1.FRM
+MsgBox "Por favor revise los datos. Falta informacion o estan equivocados", vbExclamation, BoxTit
+	BoxResp = MsgBox("¿ Desea Guardar " & Trim(Mid(cmbInv.Text, 1, 40)) & " ?", vbQuestion + vbYesNo, BoxTit)
+MsgBox "Para Crear Departamentos en Linea. Aún no esta Disponible", vbInformation, BoxTit
+MsgBox "Para Crear Productos de Inventario en Linea. Aún no esta Disponible", vbInformation, BoxTit
+MsgBox "Los datos del Encabezado del Documento tienen problemas, favor revisar", vbInformation, BoxTit
+	BoxResp = MsgBox("¿ Desea Guardar la Compra de " & Trim(Mid(cmbProv.Text, 1, 45)) & " ?", vbQuestion + vbYesNo, BoxTit)
+MsgBox "LA SUMA DEL VALOR DE LOS PRODUCTOS ES DIFERENTE DEL VALOR DEL DOCUMENTO. REVISE LISTA DE PRODUCTOS o CAMBIE EL VALOR DEL DOCUMENTO", vbCritical, BoxTit
+MsgBox "La compra fue grabada con exito", vbInformation, BoxTit
+	BoxResp = MsgBox("¿ Desea Eliminar del Pedido a " & Trim(MSHFDet.Text) & " ?", vbQuestion + vbYesNo, BoxTit)
+MsgBox "Escriba un numero de documento valido", vbExclamation, BoxTit
+MsgBox "Escriba una cantidad valida", vbExclamation, BoxTit
+MsgBox "Escriba un valor valido", vbExclamation, BoxTit
+
+---------- ADMDEPOP.FRM
+MsgBox "El Departamento NO se puede Eliminar", vbExclamation, BoxTit
+MsgBox "¡¡ NO HAY SUFICIENTE INFORMACION PARA GRABAR !!", vbExclamation, BoxTit
+MsgBox sError, vbCritical, BoxTit
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+	BoxResp = MsgBox(BoxPreg, vbQuestion + vbYesNo, BoxTit)
+	BoxResp = MsgBox(BoxPreg, vbExclamation + vbOKOnly, BoxTit)

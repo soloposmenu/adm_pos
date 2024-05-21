@@ -1,0 +1,21 @@
+Private Sub Mesas_Click()
+Dim lIndex As Integer
+'Mesas.List (Mesas.ListIndex)
+Meseros.Show
+nMesa = Val(Mid(Mesas.List(Mesas.ListIndex), 1, 2))
+Mesas.Clear
+msConn.Execute "UPDATE mesas SET mesas.disponible = -1 WHERE mesas.numero = " & nMesa
+rs01.Close
+Set rs01 = New Recordset
+rs01.Open "SELECT numero, iif(disponible=0,'Libre','Ocupada') AS status FROM mesas", msConn, adOpenDynamic, adLockOptimistic
+Do Until rs01.EOF
+    Mesas.AddItem Format(rs01!numero) + "   " + rs01!Status
+    If rs01!numero = nMesa Then
+        lIndex = Mesas.ListIndex
+    End If
+    rs01.MoveNext
+Loop
+NumFila = 1
+'Meseros.Show
+'Mesas.List (lIndex)
+End Sub
