@@ -1,0 +1,32 @@
+[
+	{
+		"dian":1,
+		"dia":"LUN",
+		"ventas":"3752.18"
+	},
+	{
+		"dian":2,
+		"dia":"MAR",
+		"ventas":"2301.17"
+	},
+	{
+		"dian":3,
+		"dia":"MIE",
+		"ventas":"1916.06"
+	},
+	{
+		"dian":4,
+		"dia":"JUE",
+		"ventas":"2156.11"
+	},
+	{
+		"dian":5,
+		"dia":"VIE",
+		"ventas":"6818.63"
+	},
+	{
+		"dian":6,
+		"dia":"SAB",
+		"ventas":"3819.65"
+	}
+],
