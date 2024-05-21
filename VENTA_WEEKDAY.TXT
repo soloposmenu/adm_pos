@@ -1,0 +1,14 @@
+16/08/2022---00:52
+
+VENTAS SEMANA (MES ACTUAL)
+
+DIA       VENTAS
+================
+LUN/MON     2,463.49
+MAR/TUE     1,817.25
+MIE/WED       716.00
+JUE/THU     1,085.62
+VIE/FRI       421.25
+SAB/SAT     2,641.37
+DOM/SUN     7,434.12
+================

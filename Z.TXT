@@ -1,0 +1,137 @@
+12/10/2002  18:32
+  
+REPORTE DE CAJEROS (Z)
+COPIA DEL ORIGINAL
+  
+BALBOA YACHT CLUB - AMADOR
+RUC:8-.NT1-11404        DV 80
+SERIAL:A0025CPOW
+  
+CONTADOR Z : XXX
+CAJERO : Cajero, Temporal
+  
+VENTA DEL DIA:  1     152.75
+  
+TOTALES DE CAJA
+  
+EFECTIVO        2        32.75
+CHEQUE          1        20.00
+VISA            1        20.00
+MASTER CARD     1        20.00
+DINNERS CARD    1        20.00
+AMEX            1        20.00
+CLAVE           1        20.00
+  
+SUBTOTAL:           B/. 152.75
+------------------------------
+  
+AJUSTES
+  
+CORECCION        1       -2.50
+ANULACION        1       -3.25
+12/10/2002  18:32
+  
+REPORTE DE TERMINAL (Z)
+  
+BALBOA YACHT CLUB - AMADOR
+RUC:8-.NT1-11404        DV 80
+SERIAL:A0025CPOW
+  
+CONTADOR Z : 227
+CAJERO : REPORTE/TERMINAL
+  
+VENTA DEL DIA:   1    152.75
+  
+TOTALES DE CAJA
+  
+EFECTIVO        2        32.75
+CHEQUE          1        20.00
+VISA            1        20.00
+MASTER CARD     1        20.00
+DINNERS CARD    1        20.00
+AMEX            1        20.00
+CLAVE           1        20.00
+  
+SUBTOTAL:           B/. 152.75
+------------------------------
+  
+AJUSTES
+  
+CORECCION        1       -2.50
+ANULACION        1       -3.25
+  
+VENTAS ACUMULADAS
+HOY        : B/. 152.75
+TOTAL ANT. : B/. 106,022.73
+TOTAL NUEVO: B/. 106,175.48
+  
+GRAN TOTAL  : B/. 119,299.72
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+12/10/2002  18:32
+  
+REPORTE DEPARTAMENTAL (Z)
+  
+BALBOA YACHT CLUB - AMADOR
+RUC:8-.NT1-11404        DV 80
+SERIAL:A0025CPOW
+  
+CONTADOR Z : 227
+DEPART. REPORTE/TERMINAL
+  
+SANDWICHS       2     9.25
+PLATOS FUERTE   4     6.25
+NIÑOS/KIDS      1     0.25
+BEBIDAS COCIN   1     0.75
+COCKTAILS COR   5    16.25
+VINOS           2    15.00
+PISCINA         1   100.00
+HUMBERTO        1     5.00
+  
+TOTAL DEPTOS : B/. 152.75
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+12/10/2002  18:32
+  
+REPORTE DE GRUPOS (Z)
+  
+BALBOA YACHT CLUB - AMADOR
+RUC:8-.NT1-11404        DV 80
+SERIAL:A0025CPOW
+  
+CONTADOR Z : 227
+DEPART. GRUPO/TERMINAL
+  
+BAR                  31.25
+COCINA               16.50
+PISCINA             100.00
+  
+TOTAL GRUPOS:   B/. 147.75
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

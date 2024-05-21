@@ -1,0 +1,37 @@
+[
+	{
+		"dian":1,
+		"dia":"LUN/MON",
+		"ventas":2463.49
+	},
+	{
+		"dian":2,
+		"dia":"MAR/TUE",
+		"ventas":1817.25
+	},
+	{
+		"dian":3,
+		"dia":"MIE/WED",
+		"ventas":716
+	},
+	{
+		"dian":4,
+		"dia":"JUE/THU",
+		"ventas":1085.62
+	},
+	{
+		"dian":5,
+		"dia":"VIE/FRI",
+		"ventas":421.25
+	},
+	{
+		"dian":6,
+		"dia":"SAB/SAT",
+		"ventas":2641.37
+	},
+	{
+		"dian":7,
+		"dia":"DOM/SUN",
+		"ventas":7434.12
+	}
+]
