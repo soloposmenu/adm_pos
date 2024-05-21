@@ -1,0 +1,337 @@
+Comparando archivos MisClientes.frm y C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+****** MisClientes.frm
+   StartUpPosition =   2  'CenterScreen
+   Begin VB.CommandButton cmdHotel 
+      Caption         =   "HUESPEDES"
+      BeginProperty Font 
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+   StartUpPosition =   2  'CenterScreen
+   Begin VB.CommandButton cmdCli 
+      Caption         =   "STAFF"
+      BeginProperty Font 
+******
+
+****** MisClientes.frm
+      Height          =   615
+      Left            =   5640
+      TabIndex        =   1
+      Top             =   720
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+      Height          =   615
+      Index           =   2
+      Left            =   5040
+      TabIndex        =   8
+      Top             =   720
+******
+
+****** MisClientes.frm
+   Begin VB.CommandButton cmdCli 
+      Caption         =   "CLIENTES"
+      BeginProperty Font 
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+   Begin VB.CommandButton cmdCli 
+      Caption         =   "EMPLEADOS"
+      BeginProperty Font 
+******
+
+****** MisClientes.frm
+      Height          =   615
+      Left            =   1440
+      TabIndex        =   0
+      Top             =   720
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+      Height          =   615
+      Index           =   1
+      Left            =   2520
+      TabIndex        =   7
+      Top             =   720
+******
+
+****** MisClientes.frm
+   End
+   Begin VB.CommandButton cmdCancel 
+      Caption         =   "Regresar"
+      BeginProperty Font 
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+   End
+   Begin VB.CommandButton cmdHotel 
+      Caption         =   "HUESPEDES"
+      BeginProperty Font 
+******
+
+****** MisClientes.frm
+      Height          =   615
+      Left            =   5520
+      TabIndex        =   6
+      Top             =   6360
+      Width           =   1935
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+      Height          =   615
+      Left            =   7920
+      TabIndex        =   1
+      Top             =   720
+      Width           =   1935
+******
+
+****** MisClientes.frm
+   End
+   Begin VB.CommandButton cmdOK 
+      Caption         =   "Aceptar"
+      BeginProperty Font 
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+   End
+   Begin VB.CommandButton cmdCli 
+      Caption         =   "CLIENTES"
+      BeginProperty Font 
+******
+
+****** MisClientes.frm
+      Height          =   615
+      Left            =   1440
+      TabIndex        =   5
+      Top             =   6360
+      Width           =   1935
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+      Height          =   615
+      Index           =   0
+      Left            =   120
+      TabIndex        =   0
+      Top             =   720
+      Width           =   1935
+******
+
+****** MisClientes.frm
+   End
+   Begin VB.ListBox lstCli 
+      BackColor       =   &H00008080&
+      BeginProperty Font 
+         Name            =   "Arial Black"
+         Size            =   14.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+   End
+   Begin VB.CommandButton cmdCancel 
+      Caption         =   "Regresar"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+******
+
+****** MisClientes.frm
+      EndProperty
+      Height          =   4515
+      Left            =   120
+      TabIndex        =   3
+      Top             =   1560
+      Width           =   8655
+   End
+   Begin VB.VScrollBar VSOcup 
+      Height          =   4575
+      Left            =   9000
+      TabIndex        =   2
+      Top             =   1560
+      Width           =   855
+   End
+   Begin VB.Label Label1 
+      BackColor       =   &H00808080&
+      Caption         =   "Clientes "
+      BeginProperty Font 
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+      EndProperty
+      Height          =   615
+      Left            =   5520
+      TabIndex        =   6
+      Top             =   6360
+      Width           =   1935
+   End
+   Begin VB.CommandButton cmdOK 
+      Caption         =   "Aceptar"
+      BeginProperty Font 
+******
+
+****** MisClientes.frm
+         Name            =   "MS Sans Serif"
+         Size            =   13.5
+         Charset         =   0
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+******
+
+****** MisClientes.frm
+         Weight          =   700
+         Underline       =   -1  'True
+         Italic          =   0   'False
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+******
+
+****** MisClientes.frm
+      EndProperty
+      ForeColor       =   &H0000FFFF&
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+      EndProperty
+      Height          =   615
+      Left            =   1440
+      TabIndex        =   5
+      Top             =   6360
+      Width           =   1935
+   End
+   Begin VB.ListBox lstCli 
+      BackColor       =   &H00008080&
+      BeginProperty Font 
+         Name            =   "Arial Black"
+         Size            =   14.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   4515
+      Left            =   120
+      TabIndex        =   3
+      Top             =   1560
+      Width           =   8655
+   End
+   Begin VB.VScrollBar VSOcup 
+      Height          =   4575
+      Left            =   9000
+      TabIndex        =   2
+      Top             =   1560
+      Width           =   855
+   End
+   Begin VB.Label Label1 
+      BackColor       =   &H00808080&
+      Caption         =   "Clientes "
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   13.5
+         Charset         =   0
+         Weight          =   700
+         Underline       =   -1  'True
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H0000FFFF&
+******
+
+****** MisClientes.frm
+Private Sub GetClientes(Opc As Integer)
+Dim MiOpcion As Boolean
+Set rsCli = New Recordset
+If Opc = 0 Then MiOpcion = False Else MiOpcion = True
+txt = "SELECT Apellido,Nombre,Empresa,Codigo " & _
+    " FROM CLIENTES " & _
+    " WHERE HUESPED = " & MiOpcion & _
+    " ORDER BY 1,2,3"
+rsCli.Open txt, msConn, adOpenDynamic, adLockOptimistic
+
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+Private Sub GetClientes(Opc As Integer)
+Dim cSQL As String
+Dim i As Integer
+cSQL = "SELECT Nombre, Apellido , Empresa, Codigo "
+cSQL = cSQL & " FROM CLIENTES "
+cSQL = cSQL & " WHERE TIPO_CLIENTE = " & Opc
+cSQL = cSQL & " ORDER BY 1,2,3"
+
+rsCli.Open cSQL, msConn, adOpenDynamic, adLockOptimistic
+
+******
+
+****** MisClientes.frm
+Do Until rsCli.EOF
+    lstCli.AddItem FormatTexto((IIf(rsCli!nombre = "", "", rsCli!nombre) & "," & IIf(rsCli!apellido = "", "", rsCli!apellido)),
+ 26) & Chr(9) & FormatTexto(rsCli!empresa, 20) & Space(60) & rsCli!codigo
+    rsCli.MoveNext
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+Do Until rsCli.EOF
+    If Opc = 0 Then
+        lstCli.AddItem FormatTexto((IIf(rsCli!nombre = "", "", rsCli!nombre) & "," & IIf(rsCli!apellido = "", "", rsCli!apellid
+o)), 26) & Chr(9) & FormatTexto(rsCli!empresa, 20) & Space(60) & rsCli!codigo
+    Else
+        lstCli.AddItem FormatTexto((IIf(rsCli!nombre = "", "", rsCli!nombre) & "," & IIf(rsCli!apellido = "", "", rsCli!apellid
+o)), 26) & Chr(9) & Space(80) & rsCli!codigo
+    End If
+    rsCli.MoveNext
+******
+
+****** MisClientes.frm
+nCliNum = 0    'CLIENTE 0 ES EFECTIVO
+cmdCli.Enabled = False
+cmdHotel.Enabled = False
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+nCliNum = 0    'CLIENTE 0 ES EFECTIVO
+For i = 0 To cmdCli.Count - 1
+    cmdCli(i).Enabled = False
+Next
+cmdHotel.Enabled = False
+******
+
+****** MisClientes.frm
+If IsObject(rsCli) Then
+If rsCli.State = adStateOpen Then
+    rsCli.Close
+    Set rsCli = Nothing
+End If
+End If
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+If IsObject(rsCli) Then
+    If rsCli.State = adStateOpen Then
+        rsCli.Close
+        Set rsCli = Nothing
+    End If
+End If
+******
+
+****** MisClientes.frm
+End Sub
+Private Sub cmdCli_Click()
+'SELECCION DE CLIENTES REGULARES DEL RESTAURANTE
+GetClientes 0
+End Sub
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+End Sub
+
+Private Sub cmdCli_Click(Index As Integer)
+GetClientes (Index + 1)
+End Sub
+******
+
+****** MisClientes.frm
+rsCli.Find "CODIGO =" & nCliNum
+If Not rsCli.EOF Then cNombreCliente = rsCli!nombre & " " & rsCli!apellido Else cNombreCliente = ""
+rsCli.Close
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+rsCli.Find "CODIGO =" & nCliNum
+If Not rsCli.EOF Then
+    cNombreCliente = rsCli!nombre & " " & rsCli!apellido
+Else
+    cNombreCliente = ""
+End If
+rsCli.Close
+******
+
+****** MisClientes.frm
+Private Sub Form_Load()
+Dim txt As String
+
+Label1 = Label1 + rs00!descrip
+****** C:\SOLOMIX\HABIBIS\MISCLIENTES.FRM
+Private Sub Form_Load()
+If HABITACION_OK = False Then
+    cmdHotel.Visible = False
+End If
+Label1 = Label1 + rs00!descrip
+******
+
+

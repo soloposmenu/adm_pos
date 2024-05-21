@@ -1,0 +1,2 @@
+*-C:\access\
+Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\access\SOLO.mdb;

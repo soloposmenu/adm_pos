@@ -1,0 +1,204 @@
+    'ABRE PROVEEDORES
+    'SE INCLUYE STAT <> 2 PARA QUE SOLAMENTE TRAIGA LAS PENDIENTES
+    cSQL = "SELECT A.COD_PROV,A.NUMERO,A.FECHA,A.STAT," & _
+        " A.MONTO,A.PAGADO,A.TIPO,A.USUARIO " & _
+        " INTO LOLO " & _
+        " From COMPRAS_HEAD AS A" & _
+        " WHERE A.COD_PROV = " & nCodSel & _
+        " AND A.FECHA <= '" & dF1 & "'" & _
+        " AND A.TIPO='CR' "
+'" AND A.STAT <> 2 "
+    rsRegDebito.Open cSQL, msConn, adOpenStatic, adLockReadOnly
+        
+    rsDEVOLUCIONES.Open "SELECT PROV,NUM_DOC,FECHA_DOC,TOTAL " & _
+        " FROM DEVOLUCION_HEAD " & _
+        " WHERE PROV = " & nCodSel & _
+        " AND FECHA_DOC <= '" & dF1 & "'" & _
+        " ORDER BY FECHA_DOC ", msConn, adOpenStatic, adLockOptimistic
+    'Cuentas x Pagar, y se agregan a lolo
+    rsRegCred.Open "SELECT B.CODIGO_PROV,B.NUM_DOC,B.FECHA_DOC,B.VALOR_DOC," & _
+        " B.TIPO_DOC,B.USUARIO,B.COMMENT " & _
+        " FROM CXP_REC AS B " & _
+        " WHERE B.CODIGO_PROV = " & nCodSel, msConn, adOpenStatic, adLockReadOnly
+    
+    msConn.BeginTrans
+    Do Until rsRegCred.EOF
+        msConn.Execute "INSERT INTO LOLO " & _
+            " (COD_PROV,NUMERO,FECHA," & _
+            " STAT,MONTO,PAGADO," & _
+            " TIPO,USUARIO) " & _
+            " VALUES (" & _
+            rsRegCred!CODIGO_PROV & "," & rsRegCred!num_doc & ",'" & rsRegCred!FECHA_DOC & "'," & _
+            0 & "," & rsRegCred!VALOR_DOC & "," & 0# & _
+            ",'" & rsRegCred!TIPO_DOC & "'," & rsRegCred!USUARIO & ")"
+        rsRegCred.MoveNext
+    Loop
+    Do Until rsDEVOLUCIONES.EOF
+        'DEVOLUCIONES
+        msConn.Execute "INSERT INTO LOLO " & _
+            " (COD_PROV,NUMERO,FECHA," & _
+            " STAT,MONTO,PAGADO," & _
+            " TIPO,USUARIO) " & _
+            " VALUES (" & _
+        rsDEVOLUCIONES!PROV & ",'" & rsDEVOLUCIONES!num_doc & "','" & rsDEVOLUCIONES!FECHA_DOC & "'," & _
+            "0," & rsDEVOLUCIONES!TOTAL & "," & rsDEVOLUCIONES!TOTAL & ",'DV',0)"
+        rsDEVOLUCIONES.MoveNext
+    Loop
+    
+    msConn.CommitTrans
+    
+    Dim rsNC As ADODB.Recordset
+    Set rsNC = New ADODB.Recordset
+    
+    cSQL = "SELECT PROV,ID,MAX(FECHA_DOC) AS FECHA, "
+    cSQL = cSQL & "SUM(COSTO_UNIT + ITBM) AS TOTAL "
+    cSQL = cSQL & " FROM NC "
+    cSQL = cSQL & " WHERE PROV = " & nCodSel
+    cSQL = cSQL & " AND FECHA_DOC <= '" & dF1 & "'"
+    cSQL = cSQL & " GROUP BY PROV,ID "
+    cSQL = cSQL & " ORDER BY 3 "
+    
+    rsNC.Open cSQL, msConn, adOpenStatic, adLockOptimistic
+    Do While Not rsNC.EOF
+        cSQL = "INSERT INTO LOLO "
+        cSQL = cSQL & "(COD_PROV,NUMERO,FECHA,STAT,MONTO,PAGADO,TIPO,USUARIO)"
+        cSQL = cSQL & " VALUES ("
+        cSQL = cSQL & rsNC!PROV & ","
+        cSQL = cSQL & rsNC!id & ",'"
+        cSQL = cSQL & rsNC!FECHA & "',"
+        cSQL = cSQL & "0,"
+        cSQL = cSQL & rsNC!TOTAL & ","
+        cSQL = cSQL & rsNC!TOTAL & ","
+        cSQL = cSQL & "'NC',0)"
+
+        msConn.Execute cSQL
+        rsNC.MoveNext
+    Loop
+    rsNC.Close
+    Set rsNC = Nothing
+    
+    cSQL = "SELECT * FROM LOLO ORDER BY FECHA,TIPO,NUMERO"
+    rsConso.Open cSQL, msConn, adOpenDynamic, adLockReadOnly
+    rsConso.MoveFirst
+    Do Until rsConso.EOF
+        If rsConso!TIPO = "CR" Then
+            nspace1 = 6
+            If rsConso!MONTO = rsConso!PAGADO Then
+                If cMesActual = Mid(rsConso!FECHA, 5, 2) Then
+                    'SI YA FUE PAGADO, LO SUMA PERO no lo IMPRIME
+                    nSumaDebito = nSumaDebito + rsConso!MONTO
+                    'GoTo AlProximo2:
+                Else
+                    'SI NO ES MES CORRIENTE, NO IMPRIME
+                    nSumaDebito = nSumaDebito + rsConso!MONTO
+                    GoTo AlProximo2:
+                End If
+            Else
+                nSumaDebito = nSumaDebito + rsConso!MONTO
+            End If
+        Else
+            nspace1 = 19
+            If cMesActual = Mid(rsConso!FECHA, 5, 2) Then
+                'SI ESTA FUERA DEL PERIODO LO SUMA PERO NO LO IMPRIME
+                'nSumaCredito = nSumaCredito + rsConso!MONTO
+            Else
+                'PAGO FUERA DEL PERIODO
+                GoTo AlProximo2:
+            End If
+        End If
+        cFecha = (Mid(rsConso!FECHA, 7, 2) + "/" + Mid(rsConso!FECHA, 5, 2) + "/" + Mid(rsConso!FECHA, 1, 4))
+        NSPACE = Len(rsConso!NUMERO)
+        CSTRING = cFecha & Space(11 - NSPACE) & rsConso!NUMERO & Space(2) & rsConso!TIPO
+        MainMant.spDoc.TextAlign = SPTA_LEFT
+        MainMant.spDoc.TextOut 300, iLin, cFecha
+        MainMant.spDoc.TextOut 500, iLin, rsConso!NUMERO
+        MainMant.spDoc.TextOut 710, iLin, rsConso!TIPO
+
+        If rsConso!TIPO = "CR" Then
+            MainMant.spDoc.TextAlign = SPTA_RIGHT
+            'MainMant.spDoc.TextOut 1000, iLin, Format(rsConso!MONTO, "###,###.00")
+            MainMant.spDoc.TextOut 1300, iLin, Format(rsConso!MONTO, "###,###.00")
+            NSPACE = Len(Format(rsConso!MONTO, "###,###.00"))
+            nspace1 = 6
+            'nSumaDebito = nSumaDebito + rsConso!MONTO
+'            If cMesActual <> Mid(rsConso!fecha, 5, 2) Then
+'                On Error Resume Next
+'                If rsConso!MONTO = rsConso!RECIBIDO Then
+'                    iLin = iLin + 50
+'                    GoTo AlProximo2:
+'                End If
+'                On Error GoTo 0
+'            End If
+        Else
+            MainMant.spDoc.TextAlign = SPTA_RIGHT
+            'MainMant.spDoc.TextOut 1300, iLin, Format(rsConso!MONTO, "###,###.00")
+            MainMant.spDoc.TextOut 1000, iLin, Format(rsConso!MONTO, "###,###.00")
+            NSPACE = Len(Format(rsConso!MONTO, "###,###.00"))
+            nspace1 = 19
+            nSumaCredito = nSumaCredito + rsConso!MONTO
+        End If
+
+        CSTRING = CSTRING & Space(nspace1) & Space(10 - NSPACE) & Format(rsConso!MONTO, "###,###.00")
+        
+        NSPACE = Len(Format((nSumaDebito - nSumaCredito), "###,###.00"))
+        If nspace1 = 6 Then
+            CSTRING = CSTRING & Space(22 + (10 - NSPACE)) & Format((nSumaDebito - nSumaCredito), "###,###.00")
+            MainMant.spDoc.TextAlign = SPTA_RIGHT
+            MainMant.spDoc.TextOut 1600, iLin, Format((nSumaDebito - nSumaCredito), "###,###.00")
+        Else
+            CSTRING = CSTRING & Space(9 + (10 - NSPACE)) & Format((nSumaDebito - nSumaCredito), "###,###.00")
+            MainMant.spDoc.TextAlign = SPTA_RIGHT
+            MainMant.spDoc.TextOut 1600, iLin, Format((nSumaDebito - nSumaCredito), "###,###.00")
+        End If
+        MainMant.spDoc.TextAlign = SPTA_LEFT
+        iLin = iLin + 50
+        'MainMant.spDoc.TextOut 300, iLin, CSTRING
+'        iLin = iLin + 50
+AlProximo2:
+        rsConso.MoveNext
+        If iLin > 2400 Then
+'            nPagina = nPagina + 1
+            MainMant.spDoc.Page = nPagina
+            TituloCxC
+        End If
+    Loop
+    NSPACE = Len(Format((nSumaDebito - nSumaCredito), "###,###.00"))
+    'Printer.FontUnderline = True
+    iLin = iLin + 50
+    MainMant.spDoc.TextAlign = SPTA_LEFT
+    MainMant.spDoc.TextOut 300, iLin, "Saldo del Periodo : " & Format(nSumaDebito - nSumaCredito, "###,###.00")
+    
+    Dim rsDevHistory As New ADODB.Recordset
+    rsDevHistory.Open "SELECT FECHA, NUM_DOC,SUM(CANT_EXT) AS CANTIDAD,SUM (COSTO_EXTENDIDO) AS COSTO" & _
+        " FROM DEV_HISTORY " & _
+        " WHERE PROV = " & nCodSel & _
+        " AND FECHA <= '" & dF1 & "'" & _
+        " GROUP BY FECHA, NUM_DOC " & _
+        " ORDER BY FECHA", msConn, adOpenStatic, adLockOptimistic
+    
+    If rsDevHistory.EOF Then GoTo Salida_Ajustes_a_facturas:
+
+    iLin = iLin + 100
+    MainMant.spDoc.TextOut 300, iLin, "Ajustes a Facturas"
+    iLin = iLin + 50
+    MainMant.spDoc.TextOut 300, iLin, "FECHA"
+    MainMant.spDoc.TextOut 550, iLin, "DOCUMENTO"
+    MainMant.spDoc.TextOut 900, iLin, "CANTIDAD"
+    MainMant.spDoc.TextOut 1300, iLin, "MONTO"
+    iLin = iLin + 50
+    MainMant.spDoc.TextOut 300, iLin, "-----------------------------------------------------------------------------------------------------"
+    iLin = iLin + 50
+    Do While Not rsDevHistory.EOF
+        MainMant.spDoc.TextAlign = SPTA_LEFT
+        MainMant.spDoc.TextOut 300, iLin, (Mid(rsDevHistory!FECHA, 7, 2) + "/" + Mid(rsDevHistory!FECHA, 5, 2) + "/" + Mid(rsDevHistory!FECHA, 1, 4))
+        MainMant.spDoc.TextOut 550, iLin, rsDevHistory!num_doc
+        MainMant.spDoc.TextAlign = SPTA_RIGHT
+        MainMant.spDoc.TextOut 1070, iLin, Format(rsDevHistory!Cantidad, "#.00")
+        MainMant.spDoc.TextOut 1430, iLin, Format(rsDevHistory!COSTO, "#0.00")
+        iLin = iLin + 50
+        rsDevHistory.MoveNext
+    Loop
+Salida_Ajustes_a_facturas:
+    rsDevHistory.Close
+    Set rsDevHistory = Nothing
+End If

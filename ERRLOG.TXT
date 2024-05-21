@@ -1,0 +1,230 @@
+HOST...........24/11/1999
+LOCAL...........24/11/1999
+HOST...........05/12/1999 - 11:07:44 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:07:44 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:07:44 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:08:39 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:08:39 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:08:39 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:08:58 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:08:58 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:08:58 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:09:57 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:09:57 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+HOST...........05/12/1999 - 11:09:57 p.m.
+Nombre de Tabla: TMP_TRANS
+Data type mismatch in criteria expression.
+LOCAL...........05/12/1999
+Open 09:42:56 a.m.
+Cierre 09:42:56 a.m.
+Open 09:42:57 a.m.
+Cierre 09:42:57 a.m.
+Open 09:42:58 a.m.
+Cierre 09:42:58 a.m.
+Open 09:42:59 a.m.
+Cierre 09:42:59 a.m.
+Open 09:43:00 a.m.
+Cierre 09:43:00 a.m.
+Open 09:43:01 a.m.
+Cierre 09:43:01 a.m.
+Open 09:43:02 a.m.
+Cierre 09:43:02 a.m.
+Open 09:43:04 a.m.
+Cierre 09:43:04 a.m.
+Open 09:43:07 a.m.
+Cierre 09:43:07 a.m.
+Open 09:43:08 a.m.
+Cierre 09:43:08 a.m.
+Open 09:43:09 a.m.
+Cierre 09:43:09 a.m.
+Open 09:43:10 a.m.
+Cierre 09:43:10 a.m.
+Open 09:43:11 a.m.
+Cierre 09:43:11 a.m.
+Open 09:43:12 a.m.
+Cierre 09:43:12 a.m.
+Open 09:44:49 a.m.
+Cierre 09:44:49 a.m.
+Open 09:44:50 a.m.
+Cierre 09:44:50 a.m.
+Open 09:45:41 a.m.
+Cierre 09:45:41 a.m.
+Open 09:45:42 a.m.
+Cierre 09:45:42 a.m.
+Open 09:45:43 a.m.
+Cierre 09:45:43 a.m.
+Open 09:45:44 a.m.
+Cierre 09:45:44 a.m.
+Open 09:45:45 a.m.
+Cierre 09:45:45 a.m.
+Open 09:45:47 a.m.
+Cierre 09:45:47 a.m.
+Open 09:45:48 a.m.
+Cierre 09:45:48 a.m.
+Open 09:45:49 a.m.
+Cierre 09:45:49 a.m.
+Open 09:45:50 a.m.
+Cierre 09:45:50 a.m.
+Open 09:45:51 a.m.
+Cierre 09:45:51 a.m.
+Open 09:45:52 a.m.
+Cierre 09:45:52 a.m.
+Open 09:45:53 a.m.
+Cierre 09:45:53 a.m.
+Open 09:45:54 a.m.
+Cierre 09:45:54 a.m.
+Open 09:45:55 a.m.
+Cierre 09:45:55 a.m.
+Open 09:45:56 a.m.
+Cierre 09:45:56 a.m.
+Open 09:45:57 a.m.
+Cierre 09:45:57 a.m.
+Open 09:45:58 a.m.
+Cierre 09:45:58 a.m.
+Open 09:45:59 a.m.
+Cierre 09:45:59 a.m.
+Open 09:46:00 a.m.
+Cierre 09:46:00 a.m.
+Open 09:49:07 a.m.
+Cierre 09:49:07 a.m.
+Open 09:49:08 a.m.
+Cierre 09:49:08 a.m.
+Open 09:49:09 a.m.
+Cierre 09:49:09 a.m.
+Open 09:49:10 a.m.
+Cierre 09:49:10 a.m.
+Open 09:49:11 a.m.
+Cierre 09:49:11 a.m.
+Open 09:49:12 a.m.
+Cierre 09:49:12 a.m.
+Open 09:49:14 a.m.
+Cierre 09:49:14 a.m.
+Open 09:49:46 a.m.
+Cierre 09:49:46 a.m.
+Open 09:49:47 a.m.
+Cierre 09:49:47 a.m.
+Open 09:49:48 a.m.
+Cierre 09:49:48 a.m.
+Open 09:49:49 a.m.
+Cierre 09:49:49 a.m.
+Open 09:49:50 a.m.
+Cierre 09:49:50 a.m.
+Open 09:49:52 a.m.
+Cierre 09:49:52 a.m.
+Open 09:49:53 a.m.
+Cierre 09:49:53 a.m.
+Open 09:49:54 a.m.
+Cierre 09:49:54 a.m.
+Open 09:49:55 a.m.
+Cierre 09:49:55 a.m.
+Open 09:49:56 a.m.
+Cierre 09:49:56 a.m.
+Open 09:49:59 a.m.
+Cierre 09:49:59 a.m.
+Open 09:50:00 a.m.
+Cierre 09:50:00 a.m.
+Open 09:50:01 a.m.
+Cierre 09:50:01 a.m.
+Open 09:50:02 a.m.
+Cierre 09:50:02 a.m.
+Open 09:50:03 a.m.
+Cierre 09:50:03 a.m.
+Open 09:50:04 a.m.
+Cierre 09:50:04 a.m.
+Open 09:50:05 a.m.
+Cierre 09:50:05 a.m.
+Open 09:50:06 a.m.
+Cierre 09:50:06 a.m.
+Open 09:50:07 a.m.
+Cierre 09:50:07 a.m.
+Open 09:50:08 a.m.
+Cierre 09:50:08 a.m.
+Open 09:50:09 a.m.
+Cierre 09:50:09 a.m.
+Open 09:50:10 a.m.
+Cierre 09:50:10 a.m.
+Open 09:50:11 a.m.
+Cierre 09:50:11 a.m.
+Open 09:50:12 a.m.
+Cierre 09:50:12 a.m.
+Open 09:50:13 a.m.
+Cierre 09:50:13 a.m.
+Open 09:50:15 a.m.
+Cierre 09:50:15 a.m.
+Open 09:50:16 a.m.
+Cierre 09:50:16 a.m.
+Open 09:50:17 a.m.
+Cierre 09:50:17 a.m.
+Open 09:50:18 a.m.
+Cierre 09:50:18 a.m.
+Open 09:50:19 a.m.
+Cierre 09:50:19 a.m.
+Open 09:50:20 a.m.
+Cierre 09:50:20 a.m.
+Open 09:50:21 a.m.
+Cierre 09:50:21 a.m.
+Open 09:50:22 a.m.
+Cierre 09:50:22 a.m.
+Open 09:50:23 a.m.
+Cierre 09:50:23 a.m.
+Open 09:50:24 a.m.
+Cierre 09:50:24 a.m.
+Open 09:50:25 a.m.
+Cierre 09:50:25 a.m.
+Open 09:50:26 a.m.
+Cierre 09:50:26 a.m.
+Open 09:50:27 a.m.
+Cierre 09:50:27 a.m.
+Open 09:50:29 a.m.
+Cierre 09:50:29 a.m.
+Open 09:50:30 a.m.
+Cierre 09:50:30 a.m.
+Open 09:50:31 a.m.
+Cierre 09:50:31 a.m.
+Open 09:50:32 a.m.
+Cierre 09:50:32 a.m.
+Open 09:50:33 a.m.
+Cierre 09:50:33 a.m.
+Open 09:50:34 a.m.
+Cierre 09:50:34 a.m.
+Open 09:50:38 a.m.
+Cierre 09:50:38 a.m.
+Open 09:50:39 a.m.
+Cierre 09:50:39 a.m.
+Open 09:50:40 a.m.
+Cierre 09:50:40 a.m.
+Open 09:50:41 a.m.
+Cierre 09:50:41 a.m.

@@ -1,0 +1,535 @@
+Comparando archivos Pagos.frm y .\syspos~1\PAGOS.frm
+****** Pagos.frm
+   StartUpPosition =   2  'CenterScreen
+   Begin MSComctlLib.ProgressBar ProgBar 
+****** .\syspos~1\PAGOS.frm
+   StartUpPosition =   2  'CenterScreen
+   Begin VB.CheckBox chkInfo 
+      Caption         =   "Información del Cliente"
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   375
+      Left            =   6120
+      TabIndex        =   41
+      Top             =   6960
+      Width           =   3015
+   End
+   Begin MSComctlLib.ProgressBar ProgBar 
+******
+
+****** Pagos.frm
+      Caption         =   "Descuento Global"
+      Enabled         =   0   'False
+      BeginProperty Font 
+****** .\syspos~1\PAGOS.frm
+      Caption         =   "Descuento Global"
+      BeginProperty Font 
+******
+
+****** Pagos.frm
+   End
+   Begin VB.CheckBox chkInfo 
+      Caption         =   "Información del Cliente"
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   12
+         Charset         =   0
+****** .\syspos~1\PAGOS.frm
+   End
+   Begin VB.Label LbMesa 
+      Alignment       =   2  'Center
+      BackColor       =   &H00FFFFFF&
+      BorderStyle     =   1  'Fixed Single
+      BeginProperty Font 
+         Name            =   "Arial Black"
+         Size            =   26.25
+         Charset         =   0
+******
+
+****** Pagos.frm
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   375
+      Left            =   6240
+      TabIndex        =   41
+      Top             =   6960
+      Width           =   3015
+   End
+   Begin VB.Label LbMesa 
+      Alignment       =   2  'Center
+      BackColor       =   &H00FFFFFF&
+****** .\syspos~1\PAGOS.frm
+      EndProperty
+      ForeColor       =   &H00C00000&
+      Height          =   735
+      Left            =   120
+      TabIndex        =   39
+      Top             =   6960
+      Width           =   3975
+   End
+   Begin VB.Label Label3 
+      Alignment       =   1  'Right Justify
+      BackColor       =   &H00FFFFFF&
+******
+
+****** Pagos.frm
+         Name            =   "Arial Black"
+         Size            =   26.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+****** .\syspos~1\PAGOS.frm
+         Name            =   "Arial Black"
+         Size            =   15.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+******
+
+****** Pagos.frm
+      EndProperty
+      ForeColor       =   &H00C00000&
+      Height          =   735
+      Left            =   120
+      TabIndex        =   39
+      Top             =   6960
+      Width           =   3975
+   End
+   Begin VB.Label Label3 
+      Alignment       =   1  'Right Justify
+****** .\syspos~1\PAGOS.frm
+      EndProperty
+      Height          =   615
+      Left            =   3600
+      TabIndex        =   37
+      Top             =   240
+      Width           =   2415
+   End
+   Begin VB.Label Label2 
+      Alignment       =   1  'Right Justify
+******
+
+****** Pagos.frm
+      Left            =   3600
+      TabIndex        =   37
+      Top             =   240
+      Width           =   2415
+****** .\syspos~1\PAGOS.frm
+      Left            =   3600
+      TabIndex        =   36
+      Top             =   960
+      Width           =   2415
+******
+
+****** Pagos.frm
+   End
+   Begin VB.Label Label2 
+      Alignment       =   1  'Right Justify
+      BackColor       =   &H00FFFFFF&
+      BorderStyle     =   1  'Fixed Single
+      BeginProperty Font 
+         Name            =   "Arial Black"
+         Size            =   15.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+****** .\syspos~1\PAGOS.frm
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Pagos Recibidos"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+******
+
+****** Pagos.frm
+      EndProperty
+      Height          =   615
+      Left            =   3600
+      TabIndex        =   36
+      Top             =   960
+      Width           =   2415
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Pagos Recibidos"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   255
+****** .\syspos~1\PAGOS.frm
+      EndProperty
+      Height          =   255
+******
+
+****** Pagos.frm
+PLU.SubTot = FormatCurrency(IIf(IsNull(rs07!precio), 0#, rs07!precio), 2)
+On Error Resume Next
+PLU.SubTot = FormatCurrency((PLU.SubTot + (rs07!precio * iISC)), 2)
+iISCTransaccion = rs07!precio * iISC
+SBTot = Format(PLU.SubTot, "standard")
+On Error GoTo 0
+rs07.Close
+****** .\syspos~1\PAGOS.frm
+PLU.SubTot = FormatCurrency(IIf(IsNull(rs07!precio), 0#, rs07!precio), 2)
+SBTot = Format(PLU.SubTot, "standard")
+rs07.Close
+******
+
+****** Pagos.frm
+End Sub
+Private Sub ImprFactura()
+Dim i As Integer
+****** .\syspos~1\PAGOS.frm
+End Sub
+Private Sub ImprFactura(iSoloJournal As Byte)
+'Si SoloJournal = 0 entonces imprime la factura con el Slip Printer,
+'de lo contrario imprime normalmente
+Dim i As Integer
+******
+
+****** Pagos.frm
+Dim nIntentos As Integer
+Dim txtString As String
+Dim LOCAL_ISC As Single
+    
+LOCAL_ISC = iISCTransaccion
+
+****** .\syspos~1\PAGOS.frm
+Dim nIntentos As Integer
+
+******
+
+****** Pagos.frm
+If SLIP_OK = True Then
+    STATION_2PRINT = FPTR_S_SLIP
+Else
+****** .\syspos~1\PAGOS.frm
+If SLIP_OK = True Then
+    'EN DBMS ESTA MARCADO QUE ESTE CLIENTE IMPRIME CON SLIP
+    If iSoloJournal = 0 Then
+        STATION_2PRINT = FPTR_S_SLIP
+    Else
+        STATION_2PRINT = FPTR_S_RECEIPT
+    End If
+Else
+******
+
+****** Pagos.frm
+
+For nImp = 0 To 1
+****** .\syspos~1\PAGOS.frm
+
+'SON 2 CICLOS UNO PARA RECEIPT/SLIP EL OTRO PARA JOURNAL
+For nImp = 0 To 1
+******
+
+****** Pagos.frm
+        If SLIP_OK = True Then
+            vResp = MsgBox("COLOQUE EL PAPEL EN LA RANURA DE LA IMPRESORA y PRESIONE ENTER", vbInformation + vbYesNoCancel, "PR
+EPARANDOSE PARA IMPRIMIR EN EL SLIP PRINTER")
+            If vbresp = vbNo Or vbresp = vbCancel Then
+                MsgBox "SE CANCELO LA IMPRESION EN EL SLIP PRINTER", vbExclamation, "IMPRESION CANCELADA"
+                Exit Sub
+            End If
+            Sys_Pos.Coptr1.BeginInsertion (5000)
+            nEspacio = 16
+            For iSlip = 0 To 16
+                Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+            Next
+        End If
+****** .\syspos~1\PAGOS.frm
+        If SLIP_OK = True Then
+            If iSoloJournal = 0 Then
+                vResp = MsgBox("COLOQUE EL PAPEL EN LA RANURA DE LA IMPRESORA y PRESIONE ENTER", vbInformation + vbYesNoCancel,
+ "PREPARANDOSE PARA IMPRIMIR EN EL SLIP PRINTER")
+                If vResp = vbNo Or vResp = vbCancel Then
+                    MsgBox "SE CANCELO LA IMPRESION EN EL SLIP PRINTER", vbExclamation, "IMPRESION CANCELADA"
+                    Exit Sub
+                End If
+                Sys_Pos.Coptr1.BeginInsertion (5000)
+                nEspacio = 8
+                For iSlip = 0 To 11
+                    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+                Next
+            End If
+        End If
+******
+
+****** Pagos.frm
+        Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, rs00!descrip & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, rs00!RAZ_SOC & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, "RUC:" & rs00!RUC & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Mid$(rs00!Direccion, 1, 25) & Chr(&HD) & Chr(&HA)
+    Else
+        If SLIP_OK = False Then
+            For i = 1 To 10
+****** .\syspos~1\PAGOS.frm
+        Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+        If iSoloJournal <> 0 Then
+            'isolojpurnal es 1, asi que voy a imprimir en la factura normal
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, rs00!descrip & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, rs00!RAZ_SOC & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, "RUC:" & rs00!RUC & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Mid$(rs00!Direccion, 1, 25) & Chr(&HD) & Chr(&HA)
+        End If
+    Else
+        If iSoloJournal <> 0 Then
+            For i = 1 To 10
+******
+
+****** Pagos.frm
+            If SLIP_OK = True Then
+                MsgBox "FAVOR RETIRE EL PAPEL DEL SLIP DE LA IMPRESORA, PARA PODER CONTINUAR", vbCritical, "RETIRE EL PAPEL!!!"
+
+            Else
+****** .\syspos~1\PAGOS.frm
+            If SLIP_OK = True Then
+                MsgBox "FAVOR RETIRE EL PAPEL DEL SLIP DE LA IMPRESORA, PARA PODER CONTINUAR", vbInformation, "RETIRE EL PAPEL!
+!!"
+                iSoloJournal = 1
+            Else
+******
+
+****** Pagos.frm
+
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "SERIAL:" & rs00!SERIAL & " TRANS# " & rs00!TRANS + 1 & Chr(&H
+D) & Chr(&HA)
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "Mesero : " & cNomMesero & Chr(&HD) & Chr(&HA)
+****** .\syspos~1\PAGOS.frm
+
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "SERIAL:" & rs00!SERIAL & Chr(&HD) & Chr(&HA)
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "TRANS# " & rs00!TRANS + 1 & Chr(&HD) & Chr(&HA)
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "Mesero : " & cNomMesero & Chr(&HD) & Chr(&HA)
+******
+
+****** Pagos.frm
+    Do Until rsCuenta.EOF
+        If SLIP_OK = True And nEspacio = 16 Then
+            MiMatriz(0, 0) = FormatTexto(rsCuenta!descrip, 35)
+        Else
+****** .\syspos~1\PAGOS.frm
+    Do Until rsCuenta.EOF
+        If SLIP_OK = True And nEspacio = 8 Then
+            MiMatriz(0, 0) = FormatTexto(rsCuenta!descrip, 30)
+        Else
+******
+
+****** Pagos.frm
+        End If
+        MiMatriz(0, 1) = Format(rsCuenta!cant, "general number")
+        MiMatriz(0, 2) = Format(rsCuenta!precio, "#,###.00")
+        nMiSub = nMiSub + rsCuenta!precio
+****** .\syspos~1\PAGOS.frm
+        End If
+        If iSoloJournal = 0 Then
+            MiMatriz(0, 1) = Format(rsCuenta!cant, "general number")
+            MiMatriz(0, 2) = Format(rsCuenta!precio_unit, "#,###.00")
+            MiMatriz(0, 3) = Format(rsCuenta!precio, "#,###.00")
+        Else
+            MiMatriz(0, 1) = Format(rsCuenta!cant, "general number")
+            MiMatriz(0, 2) = Format(rsCuenta!precio, "#,###.00")
+        End If
+        
+        nMiSub = nMiSub + rsCuenta!precio
+******
+
+****** Pagos.frm
+        Milen2 = Len(MiMatriz(0, 2))
+        LinTx = MiMatriz(0, 0) & Space(5 - MiLen1) & MiMatriz(0, 1) & _
+               Space(10 - Milen2) & MiMatriz(0, 2)
+        Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & LinTx & Chr(&HD) & Chr(&HA)
+****** .\syspos~1\PAGOS.frm
+        Milen2 = Len(MiMatriz(0, 2))
+        Milen3 = Len(MiMatriz(0, 3))
+        If iSoloJournal = 0 Then
+            LinTx = MiMatriz(0, 0) & Space(5 - MiLen1) & _
+                MiMatriz(0, 1) & Space(12 - Milen2) & _
+                MiMatriz(0, 2) & Space(11 - Milen3) & _
+                MiMatriz(0, 3)
+        Else
+            LinTx = MiMatriz(0, 0) & Space(5 - MiLen1) & _
+                MiMatriz(0, 1) & Space(10 - Milen2) & _
+                MiMatriz(0, 2)
+        End If
+        Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & LinTx & Chr(&HD) & Chr(&HA)
+******
+
+****** Pagos.frm
+        If SLIP_OK And nImp = 0 Then
+            If nLinDetalle = 20 Or nLinDetalle = 40 Or nLinDetalle = 60 Then
+                Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & Chr(&HD) & Chr(&HA)
+                Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "Impresión continua en la siguiente página..." & C
+hr(&HD) & Chr(&HA)
+                'agregar el manejo de error
+                Sys_Pos.Coptr1.BeginRemoval (5000)
+
+                Sys_Pos.Coptr1.BeginInsertion (5000)
+                nEspacio = 16
+                For iSlip = 0 To 16
+                    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+                Next
+                Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "Viene de la página anterior" & Chr(&HD) & Chr(&HA
+)
+            End If
+****** .\syspos~1\PAGOS.frm
+        If SLIP_OK And nImp = 0 Then
+            If iSoloJournal = 0 Then
+                If nLinDetalle = 20 Or nLinDetalle = 40 Or nLinDetalle = 60 Then
+                    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & Chr(&HD) & Chr(&HA)
+                    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "Impresión continua en la siguiente página..."
+ & Chr(&HD) & Chr(&HA)
+                    'agregar el manejo de error
+                    Sys_Pos.Coptr1.BeginRemoval (OPOS_FOREVER)
+
+                    MsgBox "INSERTE EL PROXIMO FORMULARIO PARA PODER CONTINUAR" & vbCrLf & _
+                           "PRESIONE ENTER PARA CONTINUAR", vbInformation, BoxTit
+
+                    Sys_Pos.Coptr1.BeginInsertion (OPOS_FOREVER)
+                    nEspacio = 8
+                    For iSlip = 0 To 11
+                        Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+                    Next
+                    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "Viene de la página anterior" & Chr(&HD) & Chr
+(&HA)
+                End If
+            End If
+******
+
+****** Pagos.frm
+    Loop
+    
+    '*******************************************
+    '*******************************************
+    On Error Resume Next
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "------------------------------" & Chr(&HD) & Chr(&HA)
+****** .\syspos~1\PAGOS.frm
+    Loop
+
+    'FORMAS DE PAGOS. FALTA MANEJO DE ERROR PARA CUANDO SE ACABA EL PAPEL.
+    'Y AUN ESTA IMPRIMIENDO LAS FORMAS DE PAGO
+    On Error Resume Next
+    
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "------------------------------" & Chr(&HD) & Chr(&HA)
+******
+
+****** Pagos.frm
+ENCY") & Chr(&HD) & Chr(&HA)
+    
+    Milen2 = Len(Format(iISCTransaccion, "STANDARD"))
+    txtString = Space(nEspacio) & "ITBMS (5%): " & Space(18 - Milen2) & Format(LOCAL_ISC, "STANDARD")
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, txtString & Chr(&HD) & Chr(&HA)
+    
+    Call PutISC(Format(iISCTransaccion, "STANDARD"))
+    
+    Milen2 = Len(Format(nMiSub, "STANDARD"))
+    txtString = Space(nEspacio) & "TOTAL     : " & Space(18 - Milen2) & Format(nMiSub + FormatCurrency(LOCAL_ISC, 2), "STANDARD
+")
+    Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, txtString & Chr(&HD) & Chr(&HA)
+    'Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+    iISCTransaccion = 0
+    On Error GoTo 0
+    '*******************************************
+    '*******************************************
+    
+    If OPEN_PROPINA = False Then
+****** .\syspos~1\PAGOS.frm
+ENCY") & Chr(&HD) & Chr(&HA)
+    If OPEN_PROPINA = False Then
+******
+
+****** Pagos.frm
+, 5) & Mid(Time, 10, 4) & Chr(&HD) & Chr(&HA)
+    If nImp = 0 Then
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, rs00!MENSAJE & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+
+        If Pagos.chkInfo.Value = 1 Then
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, "NOMBRE : __________________" & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, "CEDULA : ____________" & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+****** .\syspos~1\PAGOS.frm
+, 5) & Mid(Time, 10, 4) & Chr(&HD) & Chr(&HA)
+    
+    If nImp = 0 Then
+        If Pagos.chkInfo.Value = 1 Then
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "NOMBRE : __________________" & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(nEspacio) & "CEDULA : ____________" & Chr(&HD) & Chr(&HA)
+            Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+******
+
+****** Pagos.frm
+        End If
+        
+        If SLIP_OK = True Then Sys_Pos.Coptr1.BeginRemoval (5000)
+****** .\syspos~1\PAGOS.frm
+        End If
+
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, rs00!MENSAJE & Chr(&HD) & Chr(&HA)
+        If SLIP_OK = False Then Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+
+    End If
+
+    If nImp = iSoloJournal Then
+        If SLIP_OK = True Then Sys_Pos.Coptr1.BeginRemoval (5000)
+******
+
+****** Pagos.frm
+        Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, "==============================" & Chr(&HD) & Chr(&HA)
+        '''REVISAR Printer.Print Chr$(EPSON_JOURNAL)
+        ''''''''Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, "------------------------------" & Chr(&HD) & Chr(&HA)
+        ''''''''For i = 1 To 10
+            ''''''''Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, Space(2) & Chr(&HD) & Chr(&HA)
+        ''''''''Next
+        ''''''''Sys_Pos.Coptr1.CutPaper 100
+    End If
+****** .\syspos~1\PAGOS.frm
+        Sys_Pos.Coptr1.PrintNormal STATION_2PRINT, "==============================" & Chr(&HD) & Chr(&HA)
+    End If
+******
+
+****** Pagos.frm
+    rsCuenta.Close
+    'STATION_2PRINT = FPTR_S_JOURNAL
+Next
+****** .\syspos~1\PAGOS.frm
+    rsCuenta.Close
+Next
+******
+
+****** Pagos.frm
+    'ImpresionFactura y Propinas
+    Call ImprFactura
+    Call Actualizador
+****** .\syspos~1\PAGOS.frm
+    'ImpresionFactura y Propinas
+    vResp = MsgBox("¿ Desea Imprimir la FACTURA con el SLIP ?", vbQuestion + vbYesNo, "¿ Imprimir Factura Pre-Impresa ?")
+    If vResp = vbYes Then
+        Call ImprFactura(0)
+    Else
+        Call ImprFactura(1)
+    End If
+    Call Actualizador
+******
+
+

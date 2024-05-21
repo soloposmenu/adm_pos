@@ -1,0 +1,177 @@
+Comparando archivos RptCajas.frm y .\boccalino\fuente~1\rptCajas.frm
+****** RptCajas.frm
+Begin VB.Form RptCajas 
+   BorderStyle     =   1  'Fixed Single
+****** .\boccalino\fuente~1\rptCajas.frm
+Begin VB.Form RptCajas 
+   BackColor       =   &H00B39665&
+   BorderStyle     =   1  'Fixed Single
+******
+
+****** RptCajas.frm
+Private rsPluInvent As New ADODB.Recordset
+Private Sub MesasAbiertas()
+****** .\boccalino\fuente~1\rptCajas.frm
+Private rsPluInvent As New ADODB.Recordset
+Private bPrintOk As Boolean
+Private Sub MesasAbiertas()
+******
+
+****** RptCajas.frm
+Do Until rsAbiertas.EOF
+    Sys_Pos.Coptr1.PrintNormal PTR_S_RECEIPT, rsAbiertas!mesa & Space(8) & Format(rsAbiertas!PEND, "STANDARD") & Chr(&HD) & Chr
+(&HA)
+****** .\boccalino\fuente~1\rptCajas.frm
+Do Until rsAbiertas.EOF
+    Sys_Pos.Coptr1.PrintNormal PTR_S_RECEIPT, rsAbiertas!MESA & Space(8) & Format(rsAbiertas!PEND, "STANDARD") & Chr(&HD) & Chr
+(&HA)
+******
+
+****** RptCajas.frm
+Sys_Pos.Coptr1.PrintTwoNormal FPTR_S_JOURNAL_RECEIPT, "------------------------------", "------------------------------"
+
+'*********************************************
+****** .\boccalino\fuente~1\rptCajas.frm
+Sys_Pos.Coptr1.PrintTwoNormal FPTR_S_JOURNAL_RECEIPT, "------------------------------", "------------------------------"
+'*********************************************
+******
+
+****** RptCajas.frm
+MiLen1 = Len(Format(rsISC!DIARIO, "CURRENCY"))
+Sys_Pos.Coptr1.PrintTwoNormal FPTR_S_JOURNAL_RECEIPT, "ITBMS (5%):" & Space(18 - MiLen1) & Format(rsISC!DIARIO, "CURRENCY"), "I
+TBMS (5%):" & Space(18 - MiLen1) & Format(rsISC!DIARIO, "CURRENCY")
+rsISC.Fields(Month(Date)).Value = rsISC.Fields(Month(Date)).Value + rsISC!DIARIO
+****** .\boccalino\fuente~1\rptCajas.frm
+MiLen1 = Len(Format(rsISC!DIARIO, "CURRENCY"))
+Sys_Pos.Coptr1.PrintTwoNormal FPTR_S_JOURNAL_RECEIPT, "ITBMS  (5%):" & Space(18 - MiLen1) & Format(rsISC!DIARIO, "CURRENCY"), "
+ITBMS  (5%):" & Space(18 - MiLen1) & Format(rsISC!DIARIO, "CURRENCY")
+rsISC.Fields(Month(Date)).Value = rsISC.Fields(Month(Date)).Value + rsISC!DIARIO
+******
+
+****** RptCajas.frm
+'*********************************************
+
+sqltext = "SELECT TIPO_PAGO,COUNT(TIPO_PAGO) AS Z_COUNT, " & _
+****** .\boccalino\fuente~1\rptCajas.frm
+'*********************************************
+sqltext = "SELECT TIPO_PAGO,COUNT(TIPO_PAGO) AS Z_COUNT, " & _
+******
+
+****** RptCajas.frm
+On Error Resume Next
+Sys_Pos.Coptr1.PrintTwoNormal FPTR_S_JOURNAL_RECEIPT, "   ITBMS  : " & Format(iISCTransaccion, "CURRENCY"), "   ITBMS  : " & Fo
+rmat(iISCTransaccion, "CURRENCY")
+iISCTransaccion = 0#
+****** .\boccalino\fuente~1\rptCajas.frm
+On Error Resume Next
+Sys_Pos.Coptr1.PrintTwoNormal FPTR_S_JOURNAL_RECEIPT, "   ITBMS   : " & Format(iISCTransaccion, "CURRENCY"), "   ITBMS   : " & 
+Format(iISCTransaccion, "CURRENCY")
+iISCTransaccion = 0#
+******
+
+****** RptCajas.frm
+        "(NUM_TRANS,CAJA,CAJERO,MESA,MESERO,VALID,LIN,DESCRIP,CANT,DEPTO,PLU,ENVASE,PRECIO_UNIT,PRECIO,FECHA,HORA,TIPO,DESCUENT
+O) VALUES (" & _
+        "" & rsTran!NUM_TRANS & "," & rsTran!caja & "," & rsTran!CAJERO & "," & rsTran!mesa & "," & rsTran!mesero & "," & rsTra
+n!VALID & "," & rsTran!LIN & "," & "'" & _
+****** .\boccalino\fuente~1\rptCajas.frm
+        "(NUM_TRANS,CAJA,CAJERO,MESA,MESERO,VALID,LIN,DESCRIP,CANT,DEPTO,PLU,ENVASE,PRECIO_UNIT,PRECIO,FECHA,HORA,TIPO,DESCUENT
+O,FECHA_TRANS,HORA_TRANS,Z_COUNTER) VALUES (" & _
+        "" & rsTran!NUM_TRANS & "," & rsTran!caja & "," & rsTran!CAJERO & "," & rsTran!MESA & "," & rsTran!mesero & "," & rsTra
+n!VALID & "," & rsTran!LIN & "," & "'" & _
+******
+
+****** RptCajas.frm
+ra & "'" & _
+        ",'" & rsTran!TIPO & "'," & rsTran!DESCUENTO & ")"
+    msConn.Execute CadenaSql
+****** .\boccalino\fuente~1\rptCajas.frm
+ra & "'" & _
+        ",'" & rsTran!TIPO & "'," & rsTran!DESCUENTO & ",'" & _
+        rsTran!FECHA_TRANS & "','" & IIf(IsNull(rsTran!HORA_TRANS), "00:00", rsTran!HORA_TRANS) & "'," & rs00!Z_CDEP & ")"
+    msConn.Execute CadenaSql
+******
+
+****** RptCajas.frm
+msConn.CommitTrans
+rsTran.Close
+****** .\boccalino\fuente~1\rptCajas.frm
+msConn.CommitTrans
+
+'ACTUALIZA Z_COUNTER
+msConn.BeginTrans
+cSQL = "INSERT INTO Z_COUNTER (CONTADOR, FECHA, HORA, PRINT_OK, TOTAL_ANTERIOR, TOTAL_NUEVO, GRAN_TOTAL) VALUES ('" & _
+        rs00!Z_CDEP & "','" & Format(Date, "YYYYMMDD") & "','" & _
+        Format(Time, "HHMM") & "'," & bPrintOk & "," & ssVtatot & "," & _
+        rs00!VTA_TOT & "," & rs00!tot_hash & ")"
+        
+msConn.Execute cSQL
+msConn.CommitTrans
+
+rsTran.Close
+******
+
+****** RptCajas.frm
+Do Until rsTran.EOF
+    sqltext = "INSERT INTO HIST_TR_PAGO (NUM_TRANS,TIPO_PAGO,CAJERO,LIN,MONTO) " & _
+            " VALUES (" & rsTran!NUM_TRANS & "," & rsTran!TIPO_PAGO & "," & _
+            rsTran!CAJERO & "," & rsTran!LIN & "," & Format(rsTran!MONTO, "#0.00") & ")"
+    msConn.Execute sqltext
+****** .\boccalino\fuente~1\rptCajas.frm
+Do Until rsTran.EOF
+    sqltext = "INSERT INTO HIST_TR_PAGO (NUM_TRANS,TIPO_PAGO,CAJERO,LIN,MONTO,MESA,Z_COUNTER) " & _
+            " VALUES (" & rsTran!NUM_TRANS & "," & _
+            rsTran!TIPO_PAGO & "," & _
+            rsTran!CAJERO & "," & rsTran!LIN & "," & _
+            Format(rsTran!MONTO, "#0.00") & "," & _
+            rsTran!MESA & "," & rs00!Z_CDEP & ")"
+    msConn.Execute sqltext
+******
+
+****** RptCajas.frm
+    sqltext = "INSERT INTO HIST_TR_PROP " & _
+            " (NUM_TRANS,MESERO,CAJERO,LIN,TIPO_PAGO,MONTO) " & _
+            " VALUES (" & _
+            rsTran!NUM_TRANS & "," & rsTran!mesero & "," & rsTran!CAJERO & "," & _
+            rsTran!LIN & "," & rsTran!TIPO_PAGO & "," & Format(rsTran!MONTO, "#0.00") & ")"
+    
+****** .\boccalino\fuente~1\rptCajas.frm
+    sqltext = "INSERT INTO HIST_TR_PROP " & _
+            " (NUM_TRANS,MESERO,CAJERO,LIN,TIPO_PAGO,MONTO,MESA,Z_COUNTER) " & _
+            " VALUES (" & _
+            rsTran!NUM_TRANS & "," & rsTran!mesero & "," & _
+            rsTran!CAJERO & "," & _
+            rsTran!LIN & "," & rsTran!TIPO_PAGO & "," & _
+            Format(rsTran!MONTO, "#0.00") & "," & _
+            rsTran!MESA & "," & rs00!Z_CDEP & ")"
+    
+******
+
+****** RptCajas.frm
+    sqltext = "INSERT INTO HIST_TR_CLI " & _
+            " (CODIGO_TP,CODIGO_CLI,NUM_TRANS,MONTO,FECHA,STATUS,RECIBIDO,SALDO,TIPO_TRANS,COMMENT) VALUES (" & _
+            rsTran!CODIGO_TP & "," & rsTran!CODIGO_CLI & "," & rsTran!NUM_TRANS & "," & _
+****** .\boccalino\fuente~1\rptCajas.frm
+    sqltext = "INSERT INTO HIST_TR_CLI " & _
+            " (CODIGO_TP,CODIGO_CLI,NUM_TRANS,MONTO,FECHA,STATUS,RECIBIDO,SALDO,TIPO_TRANS,COMMENT,Z_COUNTER) VALUES (" & _
+            rsTran!CODIGO_TP & "," & rsTran!CODIGO_CLI & "," & rsTran!NUM_TRANS & "," & _
+******
+
+****** RptCajas.frm
+            Format(rsTran!MONTO - rsTran!RECIBIDO, "#0.00") & _
+            ",'FA','Factura de Ventas')"
+
+****** .\boccalino\fuente~1\rptCajas.frm
+            Format(rsTran!MONTO - rsTran!RECIBIDO, "#0.00") & _
+            ",'FA','Factura de Ventas', " & rs00!Z_CDEP & ")"
+
+******
+
+****** RptCajas.frm
+****** .\boccalino\fuente~1\rptCajas.frm
+Private Sub Form_Load()
+bPrintOk = True
+End Sub
+******
+
+
